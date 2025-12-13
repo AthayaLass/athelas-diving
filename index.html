@@ -3,265 +3,328 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Athelas Diving - Professional diving courses and underwater adventures">
-    <title>Athelas Diving - Dive into Adventure</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Athelas Diving - Professional Diving Services</title>
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://athelas-diving.github.io/">
+    <meta property="og:title" content="Athelas Diving - Professional Diving Services">
+    <meta property="og:description" content="Experience the healing magic of the underwater world with Athelas Diving. Professional diving services that transport you to an otherworldly realm of marine wonders.">
+    <meta property="og:image" content="https://athelas-diving.github.io/images/Logo_Athelas.png">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Athelas Diving - Professional Diving Services">
+    <meta name="twitter:description" content="Experience the healing magic of the underwater world with Athelas Diving. Professional diving services that transport you to an otherworldly realm of marine wonders.">
+    <meta name="twitter:image" content="https://athelas-diving.github.io/images/Logo_Athelas.png">
+    
+    <link rel="stylesheet" href="css/athelas-diving.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
+    <header>
         <div class="container">
-            <div class="nav-wrapper">
-                <div class="logo">
-                    <h2>Athelas Diving</h2>
-                </div>
-                <ul class="nav-menu" id="navMenu">
-                    <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#courses" class="nav-link">Courses</a></li>
-                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-                <div class="hamburger" id="hamburger">
+            <div class="header-content">
+                <a href="#" class="logo-link">
+                    <img src="images/Logo_Athelas.png" alt="Athelas Diving Logo" class="logo">
+                </a>
+                
+                <!-- Burger Menu Button -->
+                <div class="burger-menu" id="burgerMenu">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1 class="hero-title">Dive into Adventure</h1>
-            <p class="hero-subtitle">Discover the underwater world with professional diving courses</p>
-            <div class="hero-buttons">
-                <a href="#courses" class="btn btn-primary">Explore Courses</a>
-                <a href="#contact" class="btn btn-secondary">Get Started</a>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <span>Scroll Down</span>
-            <div class="scroll-arrow"></div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">About Us</h2>
-                <p class="section-subtitle">Your trusted partner in diving adventures</p>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Professional Diving Instruction</h3>
-                    <p>At Athelas Diving, we are passionate about sharing the beauty of the underwater world. With years of experience and certified instructors, we offer comprehensive diving courses for all skill levels.</p>
-                    <p>Whether you're a complete beginner or looking to advance your skills, our personalized approach ensures you learn in a safe and enjoyable environment.</p>
-                    <ul class="features-list">
-                        <li>✓ Certified PADI Instructors</li>
-                        <li>✓ Small Class Sizes</li>
-                        <li>✓ Modern Equipment</li>
-                        <li>✓ Safety First Approach</li>
-                    </ul>
-                </div>
-                <div class="about-image">
-                    <div class="image-placeholder">
-                        <span>Diving Image</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Courses Section -->
-    <section id="courses" class="courses">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Our Courses</h2>
-                <p class="section-subtitle">Choose the perfect course for your diving journey</p>
-            </div>
-            <div class="courses-grid">
-                <div class="course-card">
-                    <div class="course-icon">🌊</div>
-                    <h3>Open Water Diver</h3>
-                    <p>Perfect for beginners. Learn the fundamentals of scuba diving and earn your first certification.</p>
-                    <ul class="course-features">
-                        <li>3-4 days</li>
-                        <li>Pool & Open Water</li>
-                        <li>Certification Included</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-outline">Learn More</a>
-                </div>
-                <div class="course-card">
-                    <div class="course-icon">🐠</div>
-                    <h3>Advanced Open Water</h3>
-                    <p>Take your diving to the next level with advanced techniques and deeper dives.</p>
-                    <ul class="course-features">
-                        <li>2-3 days</li>
-                        <li>Deep & Navigation</li>
-                        <li>5 Adventure Dives</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-outline">Learn More</a>
-                </div>
-                <div class="course-card">
-                    <div class="course-icon">🤿</div>
-                    <h3>Rescue Diver</h3>
-                    <p>Learn to prevent and manage diving emergencies. Essential for serious divers.</p>
-                    <ul class="course-features">
-                        <li>3-4 days</li>
-                        <li>Emergency Procedures</li>
-                        <li>First Aid Training</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-outline">Learn More</a>
-                </div>
-                <div class="course-card">
-                    <div class="course-icon">⭐</div>
-                    <h3>Divemaster</h3>
-                    <p>Become a professional dive leader. The first step in your diving career.</p>
-                    <ul class="course-features">
-                        <li>4-6 weeks</li>
-                        <li>Leadership Training</li>
-                        <li>Professional Certification</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-outline">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Gallery</h2>
-                <p class="section-subtitle">Explore the beauty beneath the waves</p>
-            </div>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <div class="gallery-image">
-                        <span>Image 1</span>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-image">
-                        <span>Image 2</span>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-image">
-                        <span>Image 3</span>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-image">
-                        <span>Image 4</span>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-image">
-                        <span>Image 5</span>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-image">
-                        <span>Image 6</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Get in Touch</h2>
-                <p class="section-subtitle">Ready to start your diving adventure?</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="info-item">
-                        <div class="info-icon">📍</div>
-                        <div class="info-text">
-                            <h4>Location</h4>
-                            <p>123 Ocean Drive<br>Coastal City, CC 12345</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-icon">📞</div>
-                        <div class="info-text">
-                            <h4>Phone</h4>
-                            <p>+1 (555) 123-4567</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-icon">✉️</div>
-                        <div class="info-text">
-                            <h4>Email</h4>
-                            <p>info@athelasdiving.com</p>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" id="phone" name="phone" placeholder="Your Phone">
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Athelas Diving</h3>
-                    <p>Your gateway to underwater adventures. Professional diving instruction since 2010.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
+                
+                <nav class="nav-menu" id="navMenu">
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#courses">Courses</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#healthy-diving">Health Benefits</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook">Facebook</a>
-                        <a href="#" aria-label="Instagram">Instagram</a>
-                        <a href="#" aria-label="Twitter">Twitter</a>
-                        <a href="#" aria-label="YouTube">YouTube</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Welcome to Athelas Diving</h1>
+                <p class="subtitle">Professional Diving Services & Education</p>
+            </div>
+        </section>
+
+        <section class="name-explanation">
+            <div class="container">
+                <div class="explanation-content">
+                    <h2>The Meaning Behind "Athelas"</h2>
+                    <div class="explanation-text">
+                        <p>Our name draws inspiration from <em>Athelas</em>, the legendary "King's Herb" from J.R.R. Tolkien's Middle-earth. This mystical plant, known for its extraordinary healing properties, serves as a perfect metaphor for our diving philosophy:</p>
+                        
+                        <div class="explanation-points">
+                            <div class="point">
+                                <h3><i class="fas fa-magic"></i> The Otherworldly Experience</h3>
+                                <p>Just as Athelas exists in a realm of fantasy and wonder, diving transports us to an otherworldly underwater universe. Here, you'll encounter creatures straight from science fiction - from the most beautiful to the most bizarre life forms.</p>
+                            </div>
+                            
+                            <div class="point">
+                                <h3><i class="fas fa-heart"></i> Healing and Inner Peace</h3>
+                                <p>Like Athelas, which could heal even the darkest of sicknesses, diving offers profound healing for the mind and soul. The underwater world has a unique ability to silence inner turmoil and bring deep inner peace.</p>
+                            </div>
+                            
+                            <div class="point">
+                                <h3><i class="fas fa-leaf"></i> Nature's Magic</h3>
+                                <p>Athelas reminds us that true magic lies in the natural world around us. Through diving, we discover the incredible beauty and wonder of marine ecosystems, reconnecting with nature's most enchanting realms.</p>
+                            </div>
+                        </div>
+                        
+                        <p class="explanation-closing">At Athelas Diving, we believe that every dive is an opportunity to experience this natural magic, find inner healing, and discover the extraordinary world beneath the waves.</p>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Athelas Diving. All rights reserved.</p>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-card" data-service="dive-courses">
+                        <div class="service-image">
+                            <img src="images/antoine_02.jpeg" alt="Dive Courses" class="service-img" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'height:200px;background:linear-gradient(135deg, rgba(2, 20, 21.6, 0.7), rgba(3, 30, 32, 0.7));display:flex;align-items:center;justify-content:center;color:white;\'>Dive Courses</div>'">
+                            <div class="service-overlay">
+                                <i class="fas fa-info-circle expand-icon"></i>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Dive Courses</h3>
+                            <p class="service-teaser">From Discovery Scuba Diving to Dive Master certification. Professional training for all levels.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card" data-service="diving-initiation">
+                        <div class="service-image">
+                            <img src="images/antoine_09.JPG" alt="Diving Initiation" class="service-img" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'height:200px;background:linear-gradient(135deg, rgba(2, 20, 21.6, 0.7), rgba(3, 30, 32, 0.7));display:flex;align-items:center;justify-content:center;color:white;\'>Diving Initiation</div>'">
+                            <div class="service-overlay">
+                                <i class="fas fa-info-circle expand-icon"></i>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Diving Initiation</h3>
+                            <p class="service-teaser">Perfect introduction to scuba diving for beginners. Experience the underwater world safely with professional guidance.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card" data-service="guided-tours">
+                        <div class="service-image">
+                            <img src="images/undewaterOm.jpeg" alt="Guided Tours" class="service-img" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'height:200px;background:linear-gradient(135deg, rgba(2, 20, 21.6, 0.7), rgba(3, 30, 32, 0.7));display:flex;align-items:center;justify-content:center;color:white;\'>Guided Tours</div>'">
+                            <div class="service-overlay">
+                                <i class="fas fa-info-circle expand-icon"></i>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Guided Tours</h3>
+                            <p class="service-teaser">Explore pristine underwater locations with expert guidance. Discover hidden marine treasures and create unforgettable memories.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card" data-service="underwater-work-ecology">
+                        <div class="service-image">
+                            <img src="images/antoine_03.jpeg" alt="Aquatic Ecology & Underwater Work" class="service-img" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'height:200px;background:linear-gradient(135deg, rgba(2, 20, 21.6, 0.7), rgba(3, 30, 32, 0.7));display:flex;align-items:center;justify-content:center;color:white;\'>Aquatic Ecology</div>'">
+                            <div class="service-overlay">
+                                <i class="fas fa-info-circle expand-icon"></i>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Aquatic Ecology & Underwater Work</h3>
+                            <p class="service-teaser">Marine science education and professional underwater services. From comprehensive ecology courses covering species identification, research techniques, and environmental conservation to technical diving solutions.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card" data-service="mindfulness">
+                        <div class="service-image">
+                            <img src="images/mindfulness01.jpg" alt="Underwater Mindfulness" class="service-img" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'height:200px;background:linear-gradient(135deg, rgba(2, 20, 21.6, 0.7), rgba(3, 30, 32, 0.7));display:flex;align-items:center;justify-content:center;color:white;\'>Underwater Mindfulness</div>'">
+                            <div class="service-overlay">
+                                <i class="fas fa-info-circle expand-icon"></i>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Underwater Mindfulness</h3>
+                            <p class="service-teaser">Experience the ultimate connection with nature through guided underwater meditation sessions.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card" data-service="photography">
+                        <div class="service-image">
+                            <img src="images/vero_04.jpeg" alt="Underwater Photography" class="service-img" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'height:200px;background:linear-gradient(135deg, rgba(2, 20, 21.6, 0.7), rgba(3, 30, 32, 0.7));display:flex;align-items:center;justify-content:center;color:white;\'>Underwater Photography</div>'">
+                            <div class="service-overlay">
+                                <i class="fas fa-info-circle expand-icon"></i>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Underwater Photography</h3>
+                            <p class="service-teaser">Capture your underwater moments with professional photography services.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <section id="healthy-diving" class="healthy-diving">
+            <div class="container">
+                <h2>Healthy Diving</h2>
+                <div class="healthy-diving-content">
+                    <div class="healthy-diving-intro">
+                        <p>Want to dive healthy? Scuba diving is a scientifically supported way to improve your physical and mental health. Here's how each dive benefits you, with evidence from peer-reviewed research and expert studies:</p>
+                    </div>
+                    <div class="health-benefits">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h4>Burn up to 700 calories per hour</h4>
+                                <p>Scuba diving is a moderate to vigorous physical activity that can burn significant calories through swimming, equipment handling, and thermal regulation.</p>
+                                <div class="source">Source: Divers Alert Network (DAN), "Physical Fitness and Diving" (2023); American College of Sports Medicine guidelines on aquatic exercise</div>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h4>Strengthen your heart and lungs</h4>
+                                <p>Regular diving activities improve cardiovascular fitness and respiratory function through controlled breathing techniques and moderate aerobic exercise.</p>
+                                <div class="source">Source: PADI (Professional Association of Diving Instructors), "Health Benefits of Diving" (2023); World Health Organization guidelines on physical activity</div>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-lungs"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h4>Reduce stress and anxiety through controlled breathing</h4>
+                                <p>The rhythmic breathing patterns and immersive underwater environment create a natural meditation-like state that promotes relaxation and stress reduction.</p>
+                                <div class="source">Source: Divers Alert Network (DAN), "Mental Health Benefits of Diving" (2023); American Psychological Association on nature-based stress reduction</div>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-bed"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h4>Improve sleep and emotional balance</h4>
+                                <p>The combination of physical exertion, stress reduction, and exposure to natural environments contributes to better sleep quality and emotional well-being.</p>
+                                <div class="source">Source: National Sleep Foundation, "Exercise and Sleep" (2023); Blue Mind theory on water's psychological benefits</div>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-dumbbell"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h4>Build core strength and flexibility with low-impact movement</h4>
+                                <p>Water's natural resistance provides a full-body workout while buoyancy reduces joint stress, making diving an excellent low-impact exercise option.</p>
+                                <div class="source">Source: American College of Sports Medicine, "Aquatic Exercise Guidelines" (2023); Arthritis Foundation recommendations for water-based activities</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience">
+            <div class="container">
+                <h2>Live the Experience</h2>
+                <div class="experience-content">
+                    <div class="experience-text">
+                        <p>Immerse yourself in the magical underwater world with our unique diving experiences:</p>
+                        <ul>
+                            <li>Guided diving tours in pristine locations</li>
+                            <li>Night diving adventures</li>
+                            <li>Marine life encounters</li>
+                            <li>Underwater photography sessions</li>
+                            <li>Customized diving experiences</li>
+                        </ul>
+                    </div>
+                    <div class="experience-image">
+                        <img src="images/undewaterOm.jpeg" alt="Diving Experience" class="experience-img" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'height:400px;background:linear-gradient(135deg, rgba(2, 20, 21.6, 0.7), rgba(3, 30, 32, 0.7));display:flex;align-items:center;justify-content:center;color:white;border-radius:20px;\'>Diving Experience</div>'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="professional">
+            <div class="container">
+                <h2>Professional Background</h2>
+                <div class="professional-content">
+                    <div class="professional-text">
+                        <p>With extensive diving experience, I bring a wealth of knowledge and expertise to every dive. My current qualifications include:</p>
+                        <ul>
+                            <li>PADI Rescue Diver certification</li>
+                            <li>Emergency First Response (EFR) certification</li>
+                            <li>SDI Dive Master certification</li>
+                            <li>Dive Leader qualification</li>
+                        </ul>
+                        <p>Currently working towards becoming a certified SDI/TDI Instructor, I am committed to continuous professional development and sharing my passion for diving with others.</p>
+                    </div>
+                    <div class="professional-image">
+                        <img src="images/antoine_01.JPG" alt="Professional diving instructor" class="professional-img" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'height:500px;background:linear-gradient(135deg, rgba(2, 20, 21.6, 0.7), rgba(3, 30, 32, 0.7));display:flex;align-items:center;justify-content:center;color:white;border-radius:20px;\'>Professional Instructor</div>'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="fun" class="fun">
+            <div class="container">
+                <h2>Dive into Adventure</h2>
+                <div class="fun-content">
+                    <div class="fun-image">
+                        <img src="images/antoine_03.jpeg" alt="Fun Diving" class="fun-img" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'height:400px;background:linear-gradient(135deg, rgba(2, 20, 21.6, 0.7), rgba(3, 30, 32, 0.7));display:flex;align-items:center;justify-content:center;color:white;border-radius:20px;\'>Fun Diving</div>'">
+                    </div>
+                    <div class="fun-text">
+                        <p>Experience the magic of the underwater world with our fun and engaging diving activities. Whether you're a beginner or an experienced diver, we create memorable adventures that combine safety, education, and pure enjoyment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <div class="contact-content">
+                    <p>Interested in our services? Contact us to discuss your diving needs.</p>
+                    <a href="mailto:athelas-diving@oceantoearth.life" class="button">Contact Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Athelas Diving. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <!-- Service Modal -->
+    <div class="service-modal" id="serviceModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <!-- Modal content will be dynamically loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/athelas-diving.js"></script>
 </body>
 </html>
-
