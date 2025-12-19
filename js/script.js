@@ -204,3 +204,4 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('Athelas Diving website loaded successfully!');
 });
 
+

@@ -34,3 +34,4 @@ This folder is for storing website images.
 - Recommended max file size: 500KB per image
 - Use appropriate dimensions (don't use 4K images for thumbnails)
 
+
