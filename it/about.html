@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athelas Diving - Chi Sono</title>
+    
+    <link rel="stylesheet" href="../css/athelas-diving.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="home.html" class="logo-link">
+                    <img src="../images/Logo_Athelas.png" alt="Athelas Diving Logo" class="logo">
+                </a>
+                
+                <div class="burger-menu" id="burgerMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <nav class="nav-menu" id="navMenu">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="diving.html">Subacquea</a></li>
+                        <li><a href="aquatic-ecology.html">Ecologia Acquatica</a></li>
+                        <li><a href="wellness-art.html">Benessere & Arte</a></li>
+                        <li><a href="about.html">Chi Sono</a></li>
+                    </ul>
+                    <div class="language-selector">
+                        <div class="language-flags">
+                            <div class="language-flag en" onclick="changeLanguage('en')" title="English"></div>
+                            <div class="language-flag fr" onclick="changeLanguage('fr')" title="Français"></div>
+                            <div class="language-flag it active" onclick="changeLanguage('it')" title="Italiano"></div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" style="background-image: linear-gradient(rgba(2, 20, 21.6, 0.3), rgba(3, 30, 32, 0.4)), url('../images/ocean_landscape05.JPG');">
+            <div class="container">
+                <h1>Chi Sono</h1>
+                <p class="subtitle">Chi Sono</p>
+            </div>
+        </section>
+
+        <section class="professional">
+            <div class="container">
+                <h2>Su di Me</h2>
+                <div class="professional-content">
+                    <div class="professional-text">
+                        <p>Benvenuto ad Athelas Diving. Sono un istruttore di subacquea appassionato, biologo marino e professionista ambientale dedicato a condividere la magia del mondo sottomarino.</p>
+                        
+                        <h3>Il Mio Percorso</h3>
+                        <p>Il mio percorso combina l'eccellenza accademica con l'esperienza pratica di subacquea. Con due master—uno in Biologia Marina (specializzato in comportamento animale e conservazione della biodiversità) e un altro in Gestione delle Risorse Naturali—porto una prospettiva unica all'educazione subacquea e all'ecologia acquatica.</p>
+                        
+                        <h3>Esperienza Professionale</h3>
+                        <p>Come istruttore SDI certificato, offro corsi di subacquea completi ed escursioni guidate. Lavoro per un'impresa specializzata in ingegneria ambientale ed ecologia acquatica, e insegno un corso sulla relazione tra esseri umani e il mondo acquatico all'Università di Neuchâtel.</p>
+                        
+                        <h3>La Mia Missione</h3>
+                        <p>Attraverso Athelas Diving, mi propongo di aiutare gli altri a scoprire il potere curativo del mondo sottomarino, sia attraverso l'educazione professionale di subacquea, la comprensione ecologica o la connessione attenta con la natura. Ogni immersione è un'opportunità di sperimentare la straordinaria bellezza e meraviglia degli ecosistemi marini.</p>
+                    </div>
+                    <div class="professional-image">
+                        <img src="../images/antoine_01.JPG" alt="Chi Sono" class="professional-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contattami</h2>
+                <div class="contact-content">
+                    <p>Vuoi saperne di più o iniziare il tuo viaggio subacqueo? Mi piacerebbe sentirti.</p>
+                    <a href="mailto:athelas-diving@oceantoearth.life" class="button">Contattami</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Athelas Diving. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <script src="../js/athelas-diving.js"></script>
+        <script>
+        // Mark active page in navbar
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPage = window.location.pathname.split('/').pop() || 'home.html';
+            const navLinks = document.querySelectorAll('nav a[href]');
+            navLinks.forEach(link => {
+                const linkPage = link.getAttribute('href');
+                if (linkPage === currentPage || (currentPage === '' && linkPage === 'home.html')) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        function changeLanguage(lang) {
+            const currentPath = window.location.pathname;
+            const fileName = currentPath.split('/').pop() || 'home.html';
+            localStorage.setItem('preferredLanguage', lang);
+            window.location.href = `../${lang}/${fileName}`;
+        }
+    </script>
+</body>
+</html>
+

@@ -35,3 +35,5 @@ This folder is for storing website images.
 - Use appropriate dimensions (don't use 4K images for thumbnails)
 
 
+
+

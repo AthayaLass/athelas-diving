@@ -1,5 +1,5 @@
-// Smooth scrolling for navigation links
-document.querySelectorAll('nav a').forEach(anchor => {
+// Smooth scrolling for navigation links (only for anchor links starting with #)
+document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
         const targetId = this.getAttribute('href');
@@ -13,6 +13,18 @@ document.querySelectorAll('nav a').forEach(anchor => {
         }
         
         // Close mobile menu after clicking a link
+        const navMenu = document.getElementById('navMenu');
+        const burgerMenu = document.getElementById('burgerMenu');
+        if (navMenu && navMenu.classList.contains('active')) {
+            navMenu.classList.remove('active');
+            burgerMenu.classList.remove('active');
+        }
+    });
+});
+
+// Close mobile menu when clicking regular page links
+document.querySelectorAll('nav a[href$=".html"]').forEach(link => {
+    link.addEventListener('click', function() {
         const navMenu = document.getElementById('navMenu');
         const burgerMenu = document.getElementById('burgerMenu');
         if (navMenu && navMenu.classList.contains('active')) {

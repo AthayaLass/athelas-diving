@@ -1,0 +1,22 @@
+{
+  "name": "athelas-diving-website",
+  "version": "1.0.0",
+  "description": "Athelas Diving - Professional Diving Services Website",
+  "scripts": {
+    "start": "live-server --port=3000 --open=/index.html",
+    "serve": "live-server --port=3000 --open=/index.html",
+    "dev": "live-server --port=3000 --open=/index.html --watch=css,js,images"
+  },
+  "keywords": [
+    "diving",
+    "scuba",
+    "marine",
+    "ecology"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
+

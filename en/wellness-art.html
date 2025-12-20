@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athelas Diving - Wellness & Art</title>
+    
+    <link rel="stylesheet" href="../css/athelas-diving.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="home.html" class="logo-link">
+                    <img src="../images/Logo_Athelas.png" alt="Athelas Diving Logo" class="logo">
+                </a>
+                
+                <div class="burger-menu" id="burgerMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <nav class="nav-menu" id="navMenu">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="diving.html">Diving</a></li>
+                        <li><a href="aquatic-ecology.html">Aquatic Ecology</a></li>
+                        <li><a href="wellness-art.html">Wellness & Art</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                    <div class="language-selector">
+                        <div class="language-flags">
+                            <div class="language-flag en active" onclick="changeLanguage('en')" title="English"></div>
+                            <div class="language-flag fr" onclick="changeLanguage('fr')" title="Français"></div>
+                            <div class="language-flag it" onclick="changeLanguage('it')" title="Italiano"></div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" style="background-image: linear-gradient(rgba(2, 20, 21.6, 0.3), rgba(3, 30, 32, 0.4)), url('../images/ocean_landscape04.JPG');">
+            <div class="container">
+                <h1>Wellness & Art</h1>
+                <p class="subtitle">Underwater Photography & Mindfulness</p>
+            </div>
+        </section>
+
+        <section class="name-explanation">
+            <div class="container">
+                <div class="explanation-content">
+                    <h2>Partnership with Veranaturae</h2>
+                    <p>In collaboration with <a href="https://veranaturae.ch" target="_blank" style="color: var(--accent); text-decoration: underline;">veranaturae.ch</a>, we offer unique experiences that combine the healing power of water with artistic expression and mindful awareness.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-card" data-service="photography">
+                        <div class="service-image">
+                            <img src="../images/vero_10.JPG" alt="Underwater Photography" class="service-img">
+                        </div>
+                        <div class="service-content">
+                            <h3>Underwater Photography</h3>
+                            <p class="service-teaser">Capture your underwater moments with professional photography services. Preserve the beauty of your diving experiences and the marine life you encounter through stunning visual documentation.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card" data-service="mindfulness">
+                        <div class="service-image">
+                            <img src="../images/water_temple.jpeg" alt="Underwater Mindfulness" class="service-img">
+                        </div>
+                        <div class="service-content">
+                            <h3>Underwater Mindfulness</h3>
+                            <p class="service-teaser">Experience the ultimate connection with nature through guided underwater meditation sessions. Combine the therapeutic benefits of water with ancient mindfulness practices for deep relaxation and inner peace.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="../images/mindfulness01.jpg" alt="Wellness Programs" class="service-img">
+                        </div>
+                        <div class="service-content">
+                            <h3>Wellness Programs</h3>
+                            <p class="service-teaser">Comprehensive wellness experiences that integrate underwater meditation, breathing techniques, and connection with marine environments. Designed to reduce stress, enhance well-being, and deepen your relationship with nature.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="professional">
+            <div class="container">
+                <h2>The Healing Power of Water</h2>
+                <div class="professional-content">
+                    <div class="professional-text">
+                        <p>The underwater world offers a unique environment for healing, reflection, and artistic inspiration. Through our wellness and art services, we help you:</p>
+                        <ul>
+                            <li>Experience deep relaxation through underwater meditation</li>
+                            <li>Capture the beauty of marine life through professional photography</li>
+                            <li>Connect with nature in a profound and meaningful way</li>
+                            <li>Develop mindfulness and awareness through water-based practices</li>
+                            <li>Create lasting memories through artistic documentation</li>
+                        </ul>
+                        <p style="margin-top: 1.5rem;">Our partnership with Veranaturae ensures that every experience is carefully designed to combine the therapeutic benefits of water with professional guidance and artistic excellence.</p>
+                    </div>
+                    <div class="professional-image">
+                        <img src="../images/undewaterOm.jpeg" alt="Underwater Mindfulness" class="professional-img" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'height:500px;background:linear-gradient(135deg, rgba(2, 20, 21.6, 0.7), rgba(3, 30, 32, 0.7));display:flex;align-items:center;justify-content:center;color:white;border-radius:20px;\'>Wellness</div>'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <div class="contact-content">
+                    <p>Interested in underwater photography or mindfulness sessions? Contact us to book your experience.</p>
+                    <a href="mailto:athelas-diving@oceantoearth.life" class="button">Contact Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Athelas Diving. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="service-modal" id="serviceModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <!-- Modal content will be dynamically loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/athelas-diving.js"></script>
+    <script>
+        // Mark active page in navbar
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPage = window.location.pathname.split('/').pop() || 'home.html';
+            const navLinks = document.querySelectorAll('nav a[href]');
+            navLinks.forEach(link => {
+                const linkPage = link.getAttribute('href');
+                if (linkPage === currentPage || (currentPage === '' && linkPage === 'home.html')) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        function changeLanguage(lang) {
+            const currentPath = window.location.pathname;
+            const fileName = currentPath.split('/').pop() || 'home.html';
+            localStorage.setItem('preferredLanguage', lang);
+            window.location.href = `../${lang}/${fileName}`;
+        }
+    </script>
+</body>
+</html>
+

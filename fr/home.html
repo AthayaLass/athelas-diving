@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athelas Diving - Accueil</title>
+    
+    <link rel="stylesheet" href="../css/athelas-diving.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="home.html" class="logo-link">
+                    <img src="../images/Logo_Athelas.png" alt="Athelas Diving Logo" class="logo">
+                </a>
+                
+                <div class="burger-menu" id="burgerMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <nav class="nav-menu" id="navMenu">
+                    <ul>
+                        <li><a href="home.html">Accueil</a></li>
+                        <li><a href="diving.html">Plongée</a></li>
+                        <li><a href="aquatic-ecology.html">Écologie Aquatique</a></li>
+                        <li><a href="wellness-art.html">Bien-Être & Art</a></li>
+                        <li><a href="about.html">À Propos</a></li>
+                    </ul>
+                    <div class="language-selector">
+                        <div class="language-flags">
+                            <div class="language-flag en" onclick="changeLanguage('en')" title="English"></div>
+                            <div class="language-flag fr active" onclick="changeLanguage('fr')" title="Français"></div>
+                            <div class="language-flag it" onclick="changeLanguage('it')" title="Italiano"></div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" style="background-image: linear-gradient(rgba(2, 20, 21.6, 0.3), rgba(3, 30, 32, 0.4)), url('../images/ocean_landscape03 - Copy.JPG');">
+            <div class="container">
+                <h1>Bienvenue chez Athelas Diving</h1>
+                <p class="subtitle">Services Professionnels de Plongée & Formation</p>
+            </div>
+        </section>
+
+        <section class="name-explanation">
+            <div class="container">
+                <div class="explanation-content">
+                    <h2>La Signification d'"Athelas"</h2>
+                    <div class="explanation-text">
+                        <p>Notre nom s'inspire d'<em>Athelas</em>, la légendaire "Herbe du Roi" du monde de J.R.R. Tolkien. Cette plante mystique, connue pour ses propriétés guérisseuses extraordinaires, sert de métaphore parfaite pour notre philosophie de plongée :</p>
+                        
+                        <div class="explanation-points">
+                            <div class="point">
+                                <h3><i class="fas fa-magic"></i> L'Expérience Extraordinaire</h3>
+                                <p>Tout comme Athelas existe dans un royaume de fantaisie et d'émerveillement, la plongée nous transporte dans un univers sous-marin extraordinaire. Ici, vous rencontrerez des créatures tout droit sorties de la science-fiction - des plus belles aux plus bizarres formes de vie.</p>
+                            </div>
+                            
+                            <div class="point">
+                                <h3><i class="fas fa-heart"></i> Guérison et Paix Intérieure</h3>
+                                <p>Comme Athelas, qui pouvait guérir même les maladies les plus sombres, la plongée offre une guérison profonde pour l'esprit et l'âme. Le monde sous-marin a une capacité unique à apaiser les tourments intérieurs et apporter une paix intérieure profonde.</p>
+                            </div>
+                            
+                            <div class="point">
+                                <h3><i class="fas fa-leaf"></i> La Magie de la Nature</h3>
+                                <p>Athelas nous rappelle que la vraie magie réside dans le monde naturel qui nous entoure. Grâce à la plongée, nous découvrons la beauté et l'émerveillement incroyables des écosystèmes marins, renouant avec les royaumes les plus enchanteurs de la nature.</p>
+                            </div>
+                        </div>
+                        
+                        <p class="explanation-closing">Chez Athelas Diving, nous croyons que chaque plongée est une opportunité d'expérimenter cette magie naturelle, de trouver une guérison intérieure et de découvrir le monde extraordinaire sous les vagues.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-overview">
+            <div class="container">
+                <h2>Nos Services</h2>
+                <div class="services-grid">
+                    <div class="service-card" onclick="window.location.href='diving.html'">
+                        <div class="service-image">
+                            <img src="../images/arborek_02.jpg" alt="Cours de Plongée" class="service-img">
+                        </div>
+                        <div class="service-content">
+                            <h3>Cours de Plongée & Excursions</h3>
+                            <p class="service-teaser">Cours de plongée professionnels SDI et excursions guidées pour tous les niveaux. Du débutant aux spécialités avancées incluant la plongée de nuit, la plongée profonde, la flottabilité optimale, la navigation, l'écologie aquatique et le nitrox.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card" onclick="window.location.href='aquatic-ecology.html'">
+                        <div class="service-image">
+                            <img src="../images/coral.jpeg" alt="Écologie Aquatique" class="service-img">
+                        </div>
+                        <div class="service-content">
+                            <h3>Écologie Aquatique</h3>
+                            <p class="service-teaser">Expertise en biologie marine avec spécialisations en comportement animal et conservation de la biodiversité. Cours universitaires sur le lien entre les humains et le monde aquatique. Services sous-marins professionnels et conseil environnemental.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card" onclick="window.location.href='wellness-art.html'">
+                        <div class="service-image">
+                            <img src="../images/water_temple.jpeg" alt="Bien-Être & Art" class="service-img">
+                        </div>
+                        <div class="service-content">
+                            <h3>Bien-Être & Art</h3>
+                            <p class="service-teaser">En partenariat avec veranaturae.ch, nous proposons de la photographie sous-marine et des expériences de pleine conscience sous-marine. Connectez-vous à la nature grâce au pouvoir guérisseur de l'eau et capturez votre voyage grâce à la photographie professionnelle.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contactez-nous</h2>
+                <div class="contact-content">
+                    <p>Intéressé par nos services ? Contactez-nous pour discuter de vos besoins en plongée.</p>
+                    <a href="mailto:athelas-diving@oceantoearth.life" class="button">Contactez-nous</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Athelas Diving. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="../js/athelas-diving.js"></script>
+        <script>
+        // Mark active page in navbar
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPage = window.location.pathname.split('/').pop() || 'home.html';
+            const navLinks = document.querySelectorAll('nav a[href]');
+            navLinks.forEach(link => {
+                const linkPage = link.getAttribute('href');
+                if (linkPage === currentPage || (currentPage === '' && linkPage === 'home.html')) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        function changeLanguage(lang) {
+            const currentPath = window.location.pathname;
+            const fileName = currentPath.split('/').pop() || 'home.html';
+            localStorage.setItem('preferredLanguage', lang);
+            window.location.href = `../${lang}/${fileName}`;
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athelas Diving - Corsi di Subacquea & Escursioni</title>
+    
+    <link rel="stylesheet" href="../css/athelas-diving.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="home.html" class="logo-link">
+                    <img src="../images/Logo_Athelas.png" alt="Athelas Diving Logo" class="logo">
+                </a>
+                
+                <div class="burger-menu" id="burgerMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <nav class="nav-menu" id="navMenu">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="diving.html">Subacquea</a></li>
+                        <li><a href="aquatic-ecology.html">Ecologia Acquatica</a></li>
+                        <li><a href="wellness-art.html">Benessere & Arte</a></li>
+                        <li><a href="about.html">Chi Sono</a></li>
+                    </ul>
+                    <div class="language-selector">
+                        <div class="language-flags">
+                            <div class="language-flag en" onclick="changeLanguage('en')" title="English"></div>
+                            <div class="language-flag fr" onclick="changeLanguage('fr')" title="Français"></div>
+                            <div class="language-flag it active" onclick="changeLanguage('it')" title="Italiano"></div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" style="background-image: linear-gradient(rgba(2, 20, 21.6, 0.3), rgba(3, 30, 32, 0.4)), url('../images/fish02.JPG');">
+            <div class="container">
+                <h1>Corsi di Subacquea & Escursioni</h1>
+                <p class="subtitle">Formazione Professionale SDI per Tutti i Livelli</p>
+            </div>
+        </section>
+
+        <section class="professional">
+            <div class="container">
+                <h2>Qualifiche Istruttore SDI</h2>
+                <div class="professional-content">
+                    <div class="professional-text">
+                        <p>Sono un istruttore certificato SDI (Scuba Diving International), offrendo formazione completa di subacquea ed escursioni guidate. La mia competenza include le seguenti specialità:</p>
+                        <ul>
+                            <li><strong>Immersione Notturna</strong> - Esplorate il mondo sottomarino dopo il tramonto e scoprite la vita marina notturna</li>
+                            <li><strong>Immersione Profonda</strong> - Formazione avanzata per immersioni oltre i 18 metri</li>
+                            <li><strong>Galleggiamento Ottimale</strong> - Padroneggiate il controllo perfetto del galleggiamento e il movimento subacqueo</li>
+                            <li><strong>Navigazione</strong> - Imparate le tecniche di navigazione subacquea usando bussola e riferimenti naturali</li>
+                            <li><strong>Ecologia Acquatica</strong> - Comprendete gli ecosistemi marini, l'identificazione delle specie e la conservazione</li>
+                            <li><strong>Nitrox (Aria Arricchita) < 40%</strong> - Estendete il vostro tempo di fondo con l'immersione nitrox</li>
+                        </ul>
+                    </div>
+                    <div class="professional-image">
+                        <img src="../images/antoine_01.JPG" alt="Istruttore SDI" class="professional-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <h2>Corsi & Servizi</h2>
+                <div class="services-grid">
+                    <div class="service-card" data-service="dive-courses">
+                        <div class="service-image">
+                            <img src="../images/antoine_07.JPG" alt="Corsi di Certificazione" class="service-img">
+                        </div>
+                        <div class="service-content">
+                            <h3>Corsi di Certificazione</h3>
+                            <p class="service-teaser">Dal Subacqueo Open Water al Dive Master. Programmi di certificazione SDI completi con istruzione personalizzata.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card" data-service="diving-initiation">
+                        <div class="service-image">
+                            <img src="../images/antoine_06.jpg" alt="Iniziazione Subacquea" class="service-img">
+                        </div>
+                        <div class="service-content">
+                            <h3>Iniziazione Subacquea</h3>
+                            <p class="service-teaser">Introduzione perfetta alla subacquea per principianti. Vivete l'esperienza del mondo sottomarino in sicurezza con una guida professionale.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card" data-service="guided-tours">
+                        <div class="service-image">
+                            <img src="../images/arborek.jpeg" alt="Escursioni Guidate" class="service-img">
+                        </div>
+                        <div class="service-content">
+                            <h3>Escursioni Guidate</h3>
+                            <p class="service-teaser">Esplorate località sottomarine incontaminate con guida esperta. Scoprite tesori marini nascosti e create ricordi indimenticabili.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card" data-service="specialties">
+                        <div class="service-image">
+                            <img src="../images/antoine_07.JPG" alt="Corsi di Specialità" class="service-img">
+                        </div>
+                        <div class="service-content">
+                            <h3>Corsi di Specialità</h3>
+                            <p class="service-teaser">Immersione notturna, immersione profonda, navigazione, galleggiamento ottimale, ecologia acquatica e specialità nitrox disponibili.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contattaci</h2>
+                <div class="contact-content">
+                    <p>Pronto a iniziare il tuo viaggio subacqueo? Contattaci per discutere delle tue esigenze di formazione o prenotare un'escursione.</p>
+                    <a href="mailto:athelas-diving@oceantoearth.life" class="button">Contattaci</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Athelas Diving. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <div class="service-modal" id="serviceModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <!-- Modal content will be dynamically loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/athelas-diving.js"></script>
+        <script>
+        // Mark active page in navbar
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPage = window.location.pathname.split('/').pop() || 'home.html';
+            const navLinks = document.querySelectorAll('nav a[href]');
+            navLinks.forEach(link => {
+                const linkPage = link.getAttribute('href');
+                if (linkPage === currentPage || (currentPage === '' && linkPage === 'home.html')) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        function changeLanguage(lang) {
+            const currentPath = window.location.pathname;
+            const fileName = currentPath.split('/').pop() || 'home.html';
+            localStorage.setItem('preferredLanguage', lang);
+            window.location.href = `../${lang}/${fileName}`;
+        }
+    </script>
+</body>
+</html>
+
