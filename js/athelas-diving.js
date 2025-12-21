@@ -22,6 +22,22 @@ document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Smooth scrolling for scroll-to-services button
+document.querySelectorAll('.btn-scroll-to-services[href^="#"]').forEach(button => {
+    button.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - 100,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
 // Close mobile menu when clicking regular page links
 document.querySelectorAll('nav a[href$=".html"]').forEach(link => {
     link.addEventListener('click', function() {
