@@ -1932,6 +1932,25 @@ footer {
     transform: rotate(-90deg) scale(1.05);
 }
 
+/* Special styling for antoineB images - portrait format, no rotation needed */
+.professional-image:has(.antoineB-img) {
+    transform: rotate(0deg);
+}
+
+.professional-img.antoineB-img {
+    transform: rotate(0deg);
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.professional-image:hover .professional-img.antoineB-img {
+    transform: rotate(0deg) scale(1.05);
+}
+
 /* Update responsive styles */
 @media (max-width: 992px) {
     .professional-content {
@@ -1952,6 +1971,10 @@ footer {
         max-width: 100%;
     }
 
+    .professional-image:has(.antoineB-img) {
+        transform: rotate(0deg);
+    }
+
     .professional-img {
         transform: rotate(0deg);
         width: 100%;
@@ -1961,7 +1984,16 @@ footer {
         object-fit: cover;
     }
 
+    .professional-img.antoineB-img {
+        max-height: 500px;
+        object-fit: cover;
+    }
+
     .professional-image:hover .professional-img {
+        transform: rotate(0deg) scale(1.05);
+    }
+
+    .professional-image:hover .professional-img.antoineB-img {
         transform: rotate(0deg) scale(1.05);
     }
 }
@@ -1996,6 +2028,10 @@ footer {
     .professional-img {
         max-height: 300px;
     }
+
+    .professional-img.antoineB-img {
+        max-height: 400px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -2010,6 +2046,10 @@ footer {
 
     .professional-img {
         max-height: 250px;
+    }
+
+    .professional-img.antoineB-img {
+        max-height: 300px;
     }
 }
 
