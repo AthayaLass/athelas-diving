@@ -71,6 +71,9 @@
                         <div class="service-content">
                             <h3>Fotografia Subacquea</h3>
                             <p class="service-teaser">Catturate i vostri momenti subacquei con servizi di fotografia professionale. Preservate la bellezza delle vostre esperienze di immersione e della vita marina che incontrate attraverso una documentazione visiva mozzafiato.</p>
+                            <div class="service-contact-button">
+                                <button class="btn-contact" onclick="openContactModal('it')">Contattaci</button>
+                            </div>
                         </div>
                     </div>
                     
@@ -81,6 +84,9 @@
                         <div class="service-content">
                             <h3>Mindfulness Subacquea</h3>
                             <p class="service-teaser">Vivete la connessione ultima con la natura attraverso sessioni guidate di meditazione subacquea. Combinate i benefici terapeutici dell'acqua con antiche pratiche di mindfulness per un rilassamento profondo e pace interiore.</p>
+                            <div class="service-contact-button">
+                                <button class="btn-contact" onclick="openContactModal('it')">Contattaci</button>
+                            </div>
                         </div>
                     </div>
                     
@@ -91,6 +97,9 @@
                         <div class="service-content">
                             <h3>Programmi di Benessere</h3>
                             <p class="service-teaser">Esperienze di benessere complete che integrano meditazione subacquea, tecniche di respirazione e connessione con ambienti marini. Progettati per ridurre lo stress, migliorare il benessere e approfondire la vostra relazione con la natura.</p>
+                            <div class="service-contact-button">
+                                <button class="btn-contact" onclick="openContactModal('it')">Contattaci</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -164,6 +173,22 @@
             </button>
             <div class="modal-body">
                 <!-- Modal content will be dynamically loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-modal" id="contactModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="contactModalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <h2 class="modal-title" id="contactModalTitle">Contattaci</h2>
+                <p class="modal-description" id="contactModalDescription">Interessato a prenotare o hai bisogno di maggiori informazioni? Contattaci tramite una delle opzioni qui sotto.</p>
+                <div class="contact-buttons" id="contactModalButtons">
+                    <!-- Contact buttons will be inserted here -->
+                </div>
             </div>
         </div>
     </div>

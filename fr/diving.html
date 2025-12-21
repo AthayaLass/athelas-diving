@@ -87,6 +87,9 @@
                         <div class="service-content">
                             <h3>Cours de Certification</h3>
                             <p class="service-teaser">Du Plongeur Open Water au Dive Master. Programmes de certification SDI complets avec instruction personnalisée.</p>
+                            <div class="service-contact-button">
+                                <button class="btn-contact" onclick="openContactModal('fr')">Contactez-nous</button>
+                            </div>
                         </div>
                     </div>
                     
@@ -97,6 +100,9 @@
                         <div class="service-content">
                             <h3>Initiation à la Plongée</h3>
                             <p class="service-teaser">Introduction parfaite à la plongée sous-marine pour les débutants. Découvrez le monde sous-marin en toute sécurité avec un guide professionnel.</p>
+                            <div class="service-contact-button">
+                                <button class="btn-contact" onclick="openContactModal('fr')">Contactez-nous</button>
+                            </div>
                         </div>
                     </div>
                     
@@ -107,12 +113,16 @@
                         <div class="service-content">
                             <h3>Excursions Guidées</h3>
                             <p class="service-teaser">Explorez des sites sous-marins préservés avec une guidance experte. Découvrez des trésors marins cachés et créez des souvenirs inoubliables.</p>
+                            <div class="service-contact-button">
+                                <button class="btn-contact" onclick="openContactModal('fr')">Contactez-nous</button>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="service-card" data-service="specialties">
+                    <div class="service-card" data-service="specialties" data-coming-soon="true">
                         <div class="service-image">
                             <img src="../images/antoine_07.JPG" alt="Cours de Spécialité" class="service-img">
+                            <div class="coming-soon-badge">Bientôt Disponible</div>
                         </div>
                         <div class="service-content">
                             <h3>Cours de Spécialité</h3>
@@ -168,6 +178,22 @@
             </button>
             <div class="modal-body">
                 <!-- Modal content will be dynamically loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-modal" id="contactModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="contactModalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <h2 class="modal-title" id="contactModalTitle">Contactez-nous</h2>
+                <p class="modal-description" id="contactModalDescription">Intéressé par une réservation ou besoin de plus d'informations ? Contactez-nous via l'une des options ci-dessous.</p>
+                <div class="contact-buttons" id="contactModalButtons">
+                    <!-- Contact buttons will be inserted here -->
+                </div>
             </div>
         </div>
     </div>

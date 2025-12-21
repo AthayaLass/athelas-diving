@@ -88,6 +88,9 @@
                         <div class="service-content">
                             <h3>Professional Underwater Services</h3>
                             <p class="service-teaser">Environmental consulting, underwater surveys, species identification, ecosystem monitoring, and research support for environmental engineering projects.</p>
+                            <div class="service-contact-button">
+                                <button class="btn-contact" onclick="openContactModal('en')">Get in Touch</button>
+                            </div>
                         </div>
                     </div>
                     
@@ -98,6 +101,9 @@
                         <div class="service-content">
                             <h3>Custom Ecology Courses</h3>
                             <p class="service-teaser">Tailored educational programs for groups or individuals interested in marine biology, conservation, and aquatic ecosystem understanding. Available for various audiences and skill levels.</p>
+                            <div class="service-contact-button">
+                                <button class="btn-contact" onclick="openContactModal('en')">Get in Touch</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -149,6 +155,22 @@
             </div>
         </div>
     </footer>
+
+    <div class="contact-modal" id="contactModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="contactModalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <h2 class="modal-title" id="contactModalTitle">Get in Touch</h2>
+                <p class="modal-description" id="contactModalDescription">Interested in booking or need more information? Contact us through any of the options below.</p>
+                <div class="contact-buttons" id="contactModalButtons">
+                    <!-- Contact buttons will be inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="../js/athelas-diving.js"></script>
     <script>

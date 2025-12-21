@@ -896,6 +896,129 @@ body.menu-open {
     display: inline-block;
 }
 
+.coming-soon-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.95), rgba(255, 152, 0, 0.95));
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    animation: pulse 2s infinite;
+}
+
+.service-contact-button {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.btn-contact {
+    background: linear-gradient(135deg, var(--main), var(--accent));
+    color: var(--white);
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(2, 20, 21.6, 0.2);
+    width: 100%;
+    max-width: 250px;
+}
+
+.btn-contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.btn-contact:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(2, 20, 21.6, 0.3);
+    background: linear-gradient(135deg, var(--accent), var(--highlight));
+}
+
+.btn-contact:hover::before {
+    left: 100%;
+}
+
+.contact-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.contact-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.contact-modal .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    width: 90%;
+    max-width: 600px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(240, 245, 245, 0.95) 100%);
+    border-radius: 25px;
+    box-shadow: 0 25px 60px rgba(2, 20, 21.6, 0.3);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.contact-modal.active .modal-content {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.contact-modal .modal-body {
+    padding: 3rem 2rem 2rem;
+}
+
+@media (max-width: 768px) {
+    .coming-soon-badge {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.8rem;
+        top: 10px;
+        right: 10px;
+    }
+    
+    .btn-contact {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .contact-modal .modal-content {
+        width: 95%;
+        max-width: 95%;
+    }
+    
+    .contact-modal .modal-body {
+        padding: 2rem 1.5rem 1.5rem;
+    }
+}
+
 /* Service Modal Styles */
 .service-modal {
     position: fixed;

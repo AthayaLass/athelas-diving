@@ -88,6 +88,9 @@
                         <div class="service-content">
                             <h3>Servizi Sottomarini Professionali</h3>
                             <p class="service-teaser">Consulenza ambientale, indagini sottomarine, identificazione di specie, monitoraggio di ecosistemi e supporto alla ricerca per progetti di ingegneria ambientale.</p>
+                            <div class="service-contact-button">
+                                <button class="btn-contact" onclick="openContactModal('it')">Contattaci</button>
+                            </div>
                         </div>
                     </div>
                     
@@ -98,6 +101,9 @@
                         <div class="service-content">
                             <h3>Corsi di Ecologia Personalizzati</h3>
                             <p class="service-teaser">Programmi educativi su misura per gruppi o individui interessati alla biologia marina, conservazione e comprensione degli ecosistemi acquatici. Disponibili per vari pubblici e livelli.</p>
+                            <div class="service-contact-button">
+                                <button class="btn-contact" onclick="openContactModal('it')">Contattaci</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -149,6 +155,22 @@
             </div>
         </div>
     </footer>
+
+    <div class="contact-modal" id="contactModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="contactModalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <h2 class="modal-title" id="contactModalTitle">Contattaci</h2>
+                <p class="modal-description" id="contactModalDescription">Interessato a prenotare o hai bisogno di maggiori informazioni? Contattaci tramite una delle opzioni qui sotto.</p>
+                <div class="contact-buttons" id="contactModalButtons">
+                    <!-- Contact buttons will be inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="../js/athelas-diving.js"></script>
         <script>

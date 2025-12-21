@@ -71,6 +71,9 @@
                         <div class="service-content">
                             <h3>Photographie Sous-Marine</h3>
                             <p class="service-teaser">Capturez vos moments sous-marins avec des services de photographie professionnelle. Préservez la beauté de vos expériences de plongée et de la vie marine que vous rencontrez grâce à une documentation visuelle époustouflante.</p>
+                            <div class="service-contact-button">
+                                <button class="btn-contact" onclick="openContactModal('fr')">Contactez-nous</button>
+                            </div>
                         </div>
                     </div>
                     
@@ -81,6 +84,9 @@
                         <div class="service-content">
                             <h3>Pleine Conscience Sous-Marine</h3>
                             <p class="service-teaser">Vivez la connexion ultime avec la nature grâce à des sessions de méditation sous-marine guidées. Combinez les bienfaits thérapeutiques de l'eau avec des pratiques anciennes de pleine conscience pour une relaxation profonde et une paix intérieure.</p>
+                            <div class="service-contact-button">
+                                <button class="btn-contact" onclick="openContactModal('fr')">Contactez-nous</button>
+                            </div>
                         </div>
                     </div>
                     
@@ -91,6 +97,9 @@
                         <div class="service-content">
                             <h3>Programmes de Bien-Être</h3>
                             <p class="service-teaser">Expériences de bien-être complètes qui intègrent la méditation sous-marine, les techniques de respiration et la connexion avec les environnements marins. Conçus pour réduire le stress, améliorer le bien-être et approfondir votre relation avec la nature.</p>
+                            <div class="service-contact-button">
+                                <button class="btn-contact" onclick="openContactModal('fr')">Contactez-nous</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -164,6 +173,22 @@
             </button>
             <div class="modal-body">
                 <!-- Modal content will be dynamically loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-modal" id="contactModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="contactModalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <h2 class="modal-title" id="contactModalTitle">Contactez-nous</h2>
+                <p class="modal-description" id="contactModalDescription">Intéressé par une réservation ou besoin de plus d'informations ? Contactez-nous via l'une des options ci-dessous.</p>
+                <div class="contact-buttons" id="contactModalButtons">
+                    <!-- Contact buttons will be inserted here -->
+                </div>
             </div>
         </div>
     </div>

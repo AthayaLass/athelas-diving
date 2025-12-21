@@ -87,6 +87,9 @@
                         <div class="service-content">
                             <h3>Certification Courses</h3>
                             <p class="service-teaser">From Open Water Diver to Dive Master. Complete SDI certification programs with personalized instruction.</p>
+                            <div class="service-contact-button">
+                                <button class="btn-contact" onclick="openContactModal('en')">Get in Touch</button>
+                            </div>
                         </div>
                     </div>
                     
@@ -97,6 +100,9 @@
                         <div class="service-content">
                             <h3>Diving Initiation</h3>
                             <p class="service-teaser">Perfect introduction to scuba diving for beginners. Experience the underwater world safely with professional guidance.</p>
+                            <div class="service-contact-button">
+                                <button class="btn-contact" onclick="openContactModal('en')">Get in Touch</button>
+                            </div>
                         </div>
                     </div>
                     
@@ -107,12 +113,16 @@
                         <div class="service-content">
                             <h3>Guided Excursions</h3>
                             <p class="service-teaser">Explore pristine underwater locations with expert guidance. Discover hidden marine treasures and create unforgettable memories.</p>
+                            <div class="service-contact-button">
+                                <button class="btn-contact" onclick="openContactModal('en')">Get in Touch</button>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="service-card" data-service="specialties">
+                    <div class="service-card" data-service="specialties" data-coming-soon="true">
                         <div class="service-image">
                             <img src="../images/antoine_07.JPG" alt="Specialty Courses" class="service-img">
+                            <div class="coming-soon-badge">Coming Soon</div>
                         </div>
                         <div class="service-content">
                             <h3>Specialty Courses</h3>
@@ -168,6 +178,22 @@
             </button>
             <div class="modal-body">
                 <!-- Modal content will be dynamically loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-modal" id="contactModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="contactModalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <h2 class="modal-title" id="contactModalTitle">Get in Touch</h2>
+                <p class="modal-description" id="contactModalDescription">Interested in booking or need more information? Contact us through any of the options below.</p>
+                <div class="contact-buttons" id="contactModalButtons">
+                    <!-- Contact buttons will be inserted here -->
+                </div>
             </div>
         </div>
     </div>

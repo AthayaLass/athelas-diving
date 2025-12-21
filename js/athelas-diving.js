@@ -712,13 +712,20 @@ document.addEventListener('DOMContentLoaded', function() {
     // Event listeners for service cards
     serviceCards.forEach(card => {
         card.addEventListener('click', function(e) {
-            // Don't open modal if clicking on links
-            if (e.target.tagName === 'A' || e.target.closest('a')) {
+            // Don't open modal if clicking on links or buttons
+            if (e.target.tagName === 'A' || e.target.closest('a') || e.target.tagName === 'BUTTON' || e.target.closest('button')) {
+                return;
+            }
+            
+            // Don't open modal if this is a "coming soon" service
+            if (this.dataset.comingSoon === 'true') {
                 return;
             }
             
             const serviceType = this.dataset.service;
-            openModal(serviceType);
+            if (serviceType) {
+                openModal(serviceType);
+            }
         });
     });
     
@@ -800,3 +807,85 @@ document.head.appendChild(style);
 
 // Initialize floating animation
 document.addEventListener('DOMContentLoaded', addFloatingAnimation);
+
+// Contact Modal Functionality
+function openContactModal(lang) {
+    const modal = document.getElementById('contactModal');
+    const modalTitle = document.getElementById('contactModalTitle');
+    const modalDescription = document.getElementById('contactModalDescription');
+    const modalButtons = document.getElementById('contactModalButtons');
+    
+    // Language-specific content
+    const content = {
+        'en': {
+            title: 'Get in Touch',
+            description: 'Interested in booking or need more information? Contact us through any of the options below.',
+            buttons: [
+                { href: 'https://calendly.com/a-baud-athelas-diving/reserve-your-diving-experience', icon: 'fas fa-calendar-alt', text: 'Book a Call', class: 'calendly' },
+                { href: 'mailto:a.baud@athelas-diving.com', icon: 'fas fa-envelope', text: 'Send Email', class: 'email' },
+                { href: 'https://wa.me/41799387737', icon: 'fab fa-whatsapp', text: 'WhatsApp', class: 'whatsapp' }
+            ]
+        },
+        'fr': {
+            title: 'Contactez-nous',
+            description: 'Intéressé par une réservation ou besoin de plus d\'informations ? Contactez-nous via l\'une des options ci-dessous.',
+            buttons: [
+                { href: 'https://calendly.com/a-baud-athelas-diving/reserve-your-diving-experience', icon: 'fas fa-calendar-alt', text: 'Réserver un Appel', class: 'calendly' },
+                { href: 'mailto:a.baud@athelas-diving.com', icon: 'fas fa-envelope', text: 'Envoyer un Email', class: 'email' },
+                { href: 'https://wa.me/41799387737', icon: 'fab fa-whatsapp', text: 'WhatsApp', class: 'whatsapp' }
+            ]
+        },
+        'it': {
+            title: 'Contattaci',
+            description: 'Interessato a prenotare o hai bisogno di maggiori informazioni? Contattaci tramite una delle opzioni qui sotto.',
+            buttons: [
+                { href: 'https://calendly.com/a-baud-athelas-diving/reserve-your-diving-experience', icon: 'fas fa-calendar-alt', text: 'Prenota una Chiamata', class: 'calendly' },
+                { href: 'mailto:a.baud@athelas-diving.com', icon: 'fas fa-envelope', text: 'Invia Email', class: 'email' },
+                { href: 'https://wa.me/41799387737', icon: 'fab fa-whatsapp', text: 'WhatsApp', class: 'whatsapp' }
+            ]
+        }
+    };
+    
+    const langContent = content[lang] || content['en'];
+    
+    // Update modal content
+    modalTitle.textContent = langContent.title;
+    modalDescription.textContent = langContent.description;
+    
+    // Generate buttons
+    modalButtons.innerHTML = langContent.buttons.map(btn => `
+        <a href="${btn.href}" target="${btn.href.startsWith('http') ? '_blank' : ''}" rel="noopener noreferrer" class="contact-button ${btn.class}">
+            <i class="${btn.icon}"></i>
+            <span>${btn.text}</span>
+        </a>
+    `).join('');
+    
+    // Show modal
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+// Close contact modal
+document.addEventListener('DOMContentLoaded', function() {
+    const contactModal = document.getElementById('contactModal');
+    const contactModalClose = document.getElementById('contactModalClose');
+    
+    if (contactModal && contactModalClose) {
+        const closeContactModal = function() {
+            contactModal.classList.remove('active');
+            document.body.style.overflow = '';
+        };
+        
+        contactModalClose.addEventListener('click', closeContactModal);
+        if (contactModal.querySelector('.modal-overlay')) {
+            contactModal.querySelector('.modal-overlay').addEventListener('click', closeContactModal);
+        }
+        
+        // Close modal on escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && contactModal.classList.contains('active')) {
+                closeContactModal();
+            }
+        });
+    }
+});
