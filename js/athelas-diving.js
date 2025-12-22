@@ -158,26 +158,26 @@ document.addEventListener('DOMContentLoaded', function() {
                 {
                     title: 'Open Water Diver',
                     icon: 'fas fa-star',
-                    description: 'Full entry-level certification. 5 pool sessions, 4 open water dives, eLearning.',
-                    price: 'CHF 650.–'
+                    description: 'Full entry-level certification. 2 confined water sessions, 3-4 open water dives, eLearning.',
+                    price: 'CHF 470.–'
                 },
                 {
                     title: 'Advanced Adventure Diver',
                     icon: 'fas fa-star',
                     description: '5 adventure dives (e.g., deep, navigation, night), gear rental optional.',
-                    price: 'CHF 450.–'
+                    price: 'CHF 410.–'
                 },
                 {
                     title: 'Rescue Diver',
                     icon: 'fas fa-crown',
                     description: 'Safety, stress management, rescue techniques, 2 days, incl. scenarios.',
-                    price: 'CHF 700.–'
+                    price: 'CHF 630.–'
                 },
                 {
                     title: 'Dive Master',
                     icon: 'fas fa-crown',
                     description: 'Leadership-level course. Includes theory, pool work, internships.',
-                    price: 'CHF 1,200.– to 1,800.–'
+                    price: 'CHF 1,080.– to 1,620.–'
                 }
             ],
             features: [
@@ -188,7 +188,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Flexible scheduling'
             ],
             buttonText: 'Contact for Details',
-            buttonAction: 'mailto:athelas-diving@oceantoearth.life?subject=Dive Courses Inquiry'
+            buttonAction: 'contact-modal'
         },
         'diving-initiation': {
             title: 'Diving Initiation',
@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Open water experience'
             ],
             buttonText: 'Book Your Initiation',
-            buttonAction: 'mailto:athelas-diving@oceantoearth.life?subject=Diving Initiation Booking'
+            buttonAction: 'contact-modal'
         },
         'guided-tours': {
             title: 'Expert-Guided Underwater Adventures',
@@ -230,7 +230,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Underwater photography tips'
             ],
             buttonText: 'Request Quote',
-            buttonAction: 'mailto:athelas-diving@oceantoearth.life?subject=Guided Tour Quote Request'
+            buttonAction: 'contact-modal'
         },
         'underwater-work-ecology': {
             title: 'Aquatic Ecology & Underwater Work',
@@ -266,7 +266,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Field trip to marine research station'
             ],
             buttonText: 'Contact for Details',
-            buttonAction: 'mailto:athelas-diving@oceantoearth.life?subject=Underwater Work & Ecology Inquiry'
+            buttonAction: 'contact-modal'
         },
         'mindfulness': {
             title: 'Underwater Meditation & Wellness',
@@ -299,7 +299,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Professional meditation guidance'
             ],
             buttonText: 'Contact for Pricing',
-            buttonAction: 'mailto:athelas-diving@oceantoearth.life?subject=Mindfulness Session Booking'
+            buttonAction: 'contact-modal'
         },
         'photography': {
             title: 'Professional Underwater Photography',
@@ -332,7 +332,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Print-ready files'
             ],
             buttonText: 'Contact for Pricing',
-            buttonAction: 'mailto:athelas-diving@oceantoearth.life?subject=Photography Session Booking'
+            buttonAction: 'contact-modal'
         }
     };
     
@@ -341,10 +341,10 @@ document.addEventListener('DOMContentLoaded', function() {
             title: 'Formation Professionnelle de Plongée',
             description: 'Cours de plongée complets de débutant à professionnel. Formation personnalisée avec attention individuelle.',
             pricing: [
-                { title: 'Plongeur Open Water', icon: 'fas fa-star', description: 'Certification de base. 5 sessions en piscine, 4 plongées en eau libre, eLearning.', price: 'CHF 650.–' },
-                { title: 'Plongeur Advanced Adventure', icon: 'fas fa-star', description: '5 plongées d\'aventure (profonde, navigation, nuit), location d\'équipement optionnelle.', price: 'CHF 450.–' },
-                { title: 'Plongeur Rescue', icon: 'fas fa-crown', description: 'Sécurité, gestion du stress, techniques de sauvetage, 2 jours, scénarios inclus.', price: 'CHF 700.–' },
-                { title: 'Divemaster', icon: 'fas fa-crown', description: 'Cours de leadership. Théorie, piscine, stage.', price: 'CHF 1,200.– à 1,800.–' }
+                { title: 'Plongeur Open Water', icon: 'fas fa-star', description: 'Certification de base. 2 sessions en eau confinée, 3-4 plongées en eau libre, eLearning.', price: 'CHF 470.–' },
+                { title: 'Plongeur Advanced Adventure', icon: 'fas fa-star', description: '5 plongées d\'aventure (profonde, navigation, nuit), location d\'équipement optionnelle.', price: 'CHF 410.–' },
+                { title: 'Plongeur Rescue', icon: 'fas fa-crown', description: 'Sécurité, gestion du stress, techniques de sauvetage, 2 jours, scénarios inclus.', price: 'CHF 630.–' },
+                { title: 'Divemaster', icon: 'fas fa-crown', description: 'Cours de leadership. Théorie, piscine, stage.', price: 'CHF 1,080.– à 1,620.–' }
             ],
             features: [
                 'Instruction professionnelle',
@@ -354,7 +354,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Planning flexible'
             ],
             buttonText: 'Contactez-nous pour les détails',
-            buttonAction: 'mailto:athelas-diving@oceantoearth.life?subject=Demande de Formation Sub'
+            buttonAction: 'contact-modal'
         },
         'diving-initiation': {
             title: 'Initiation à la Plongée',
@@ -370,7 +370,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Expérience en eau libre'
             ],
             buttonText: 'Réservez votre initiation',
-            buttonAction: 'mailto:athelas-diving@oceantoearth.life?subject=Réservation Initiation Plongée'
+            buttonAction: 'contact-modal'
         },
         'guided-tours': {
             title: 'Aventures Sous-Marines Guidées',
@@ -386,7 +386,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Conseils en photographie sous-marine'
             ],
             buttonText: 'Réservez votre tour',
-            buttonAction: 'mailto:athelas-diving@oceantoearth.life?subject=Réservation de Tour Guidé'
+            buttonAction: 'contact-modal'
         },
         'underwater-work-ecology': {
             title: 'Écologie Aquatique & Travaux Sous-Marins',
@@ -407,7 +407,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Excursion à la station marine'
             ],
             buttonText: 'Contactez-nous pour les détails',
-            buttonAction: 'mailto:athelas-diving@oceantoearth.life?subject=Demande Travaux Sous-Marins & Écologie'
+            buttonAction: 'contact-modal'
         },
         'mindfulness': {
             title: 'Méditation & Bien-Être Sous-Marin',
@@ -425,7 +425,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Guidance professionnelle'
             ],
             buttonText: 'Demandez un devis',
-            buttonAction: 'mailto:athelas-diving@oceantoearth.life?subject=Réservation de Session Mindfulness'
+            buttonAction: 'contact-modal'
         },
         'photography': {
             title: 'Photographie Sous-Marine Professionnelle',
@@ -443,7 +443,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Fichiers prêts pour l\'impression'
             ],
             buttonText: 'Demandez un devis',
-            buttonAction: 'mailto:athelas-diving@oceantoearth.life?subject=Réservation de Session de Photographie'
+            buttonAction: 'contact-modal'
         }
     };
 
@@ -452,10 +452,10 @@ document.addEventListener('DOMContentLoaded', function() {
             title: 'Formazione Subacquea Professionale',
             description: 'Corsi di immersione completi dal principiante al livello professionale. Formazione personalizzata con attenzione individuale.',
             pricing: [
-                { title: 'Subacqueo Open Water', icon: 'fas fa-star', description: 'Certificazione base. 5 sessioni in piscina, 4 immersioni in acque libere, eLearning.', price: 'CHF 650.–' },
-                { title: 'Subacqueo Advanced Adventure', icon: 'fas fa-star', description: '5 immersioni avventura (profonda, navigazione, notturna, ecc.), noleggio attrezzatura opzionale.', price: 'CHF 450.–' },
-                { title: 'Subacqueo Rescue', icon: 'fas fa-crown', description: 'Sicurezza, gestione dello stress, tecniche di salvataggio, 2 giorni, scenari inclusi.', price: 'CHF 700.–' },
-                { title: 'Divemaster', icon: 'fas fa-crown', description: 'Corso di leadership. Teoria, piscina, tirocinio.', price: 'CHF 1,200.– a 1,800.–' }
+                { title: 'Subacqueo Open Water', icon: 'fas fa-star', description: 'Certificazione base. 2 sessioni in acque confinate, 3-4 immersioni in acque libere, eLearning.', price: 'CHF 470.–' },
+                { title: 'Subacqueo Advanced Adventure', icon: 'fas fa-star', description: '5 immersioni avventura (profonda, navigazione, notturna, ecc.), noleggio attrezzatura opzionale.', price: 'CHF 410.–' },
+                { title: 'Subacqueo Rescue', icon: 'fas fa-crown', description: 'Sicurezza, gestione dello stress, tecniche di salvataggio, 2 giorni, scenari inclusi.', price: 'CHF 630.–' },
+                { title: 'Divemaster', icon: 'fas fa-crown', description: 'Corso di leadership. Teoria, piscina, tirocinio.', price: 'CHF 1,080.– a 1,620.–' }
             ],
             features: [
                 'Istruttore professionale',
@@ -465,7 +465,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Orari flessibili'
             ],
             buttonText: 'Contattaci per dettagli',
-            buttonAction: 'mailto:athelas-diving@oceantoearth.life?subject=Richiesta Corso Sub'
+            buttonAction: 'contact-modal'
         },
         'diving-initiation': {
             title: 'Iniziazione Subacquea',
@@ -481,7 +481,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Esperienza in acque libere'
             ],
             buttonText: 'Prenota la tua iniziazione',
-            buttonAction: 'mailto:athelas-diving@oceantoearth.life?subject=Prenotazione Iniziazione Subacquea'
+            buttonAction: 'contact-modal'
         },
         'guided-tours': {
             title: 'Avventure Subacquee Guidate',
@@ -497,7 +497,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Consigli fotografia subacquea'
             ],
             buttonText: 'Prenota il tuo tour',
-            buttonAction: 'mailto:athelas-diving@oceantoearth.life?subject=Prenotazione Tour Guidato'
+            buttonAction: 'contact-modal'
         },
         'underwater-work-ecology': {
             title: 'Ecologia Acquatica & Lavori Subacquei',
@@ -518,7 +518,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Uscita presso stazione marina'
             ],
             buttonText: 'Contattaci per dettagli',
-            buttonAction: 'mailto:athelas-diving@oceantoearth.life?subject=Richiesta Lavori Subacquei & Ecologia'
+            buttonAction: 'contact-modal'
         },
         'mindfulness': {
             title: 'Meditazione & Benessere Subacqueo',
@@ -536,7 +536,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Guida professionale'
             ],
             buttonText: 'Richiedi un preventivo',
-            buttonAction: 'mailto:athelas-diving@oceantoearth.life?subject=Prenotazione Sessione Mindfulness'
+            buttonAction: 'contact-modal'
         },
         'photography': {
             title: 'Fotografia Subacquea Professionale',
@@ -554,7 +554,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'File pronti per la stampa'
             ],
             buttonText: 'Richiedi un preventivo',
-            buttonAction: 'mailto:athelas-diving@oceantoearth.life?subject=Prenotazione Sessione Foto'
+            buttonAction: 'contact-modal'
         }
     };
 
@@ -563,10 +563,10 @@ document.addEventListener('DOMContentLoaded', function() {
             title: 'Professionelle Tauchausbildung',
             description: 'Umfassende Tauchkurse vom Anfänger bis zum Profi. Individuelle Betreuung und persönliche Ausbildung.',
             pricing: [
-                { title: 'Open Water Taucher', icon: 'fas fa-star', description: 'Einstiegszertifikat. 5 Pool-Sessions, 4 Freiwassertauchgänge, eLearning.', price: 'CHF 650.–' },
-                { title: 'Advanced Adventure Taucher', icon: 'fas fa-star', description: '5 Abenteuertauchgänge (z.B. Tiefe, Navigation, Nacht), Ausrüstungsverleih optional.', price: 'CHF 450.–' },
-                { title: 'Rescue Taucher', icon: 'fas fa-crown', description: 'Sicherheit, Stressmanagement, Rettungstechniken, 2 Tage, inkl. Szenarien.', price: 'CHF 700.–' },
-                { title: 'Divemaster', icon: 'fas fa-crown', description: 'Führungskurs. Theorie, Pool, Praktikum.', price: 'CHF 1,200.– bis 1,800.–' }
+                { title: 'Open Water Taucher', icon: 'fas fa-star', description: 'Einstiegszertifikat. 2 begrenzte Wassersessions, 3-4 Freiwassertauchgänge, eLearning.', price: 'CHF 470.–' },
+                { title: 'Advanced Adventure Taucher', icon: 'fas fa-star', description: '5 Abenteuertauchgänge (z.B. Tiefe, Navigation, Nacht), Ausrüstungsverleih optional.', price: 'CHF 410.–' },
+                { title: 'Rescue Taucher', icon: 'fas fa-crown', description: 'Sicherheit, Stressmanagement, Rettungstechniken, 2 Tage, inkl. Szenarien.', price: 'CHF 630.–' },
+                { title: 'Divemaster', icon: 'fas fa-crown', description: 'Führungskurs. Theorie, Pool, Praktikum.', price: 'CHF 1,080.– bis 1,620.–' }
             ],
             features: [
                 'Professionelle Anleitung',
@@ -576,7 +576,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Flexible Terminplanung'
             ],
             buttonText: 'Kontakt für Details',
-            buttonAction: 'mailto:athelas-diving@oceantoearth.life?subject=Anfrage Tauchkurs'
+            buttonAction: 'contact-modal'
         },
         'diving-initiation': {
             title: 'Tauch-Initiation',
@@ -592,7 +592,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Freiwassererfahrung'
             ],
             buttonText: 'Initiation buchen',
-            buttonAction: 'mailto:athelas-diving@oceantoearth.life?subject=Buchung Tauch-Initiation'
+            buttonAction: 'contact-modal'
         },
         'guided-tours': {
             title: 'Geführte Unterwasser-Abenteuer',
@@ -608,7 +608,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Tipps zur Unterwasserfotografie'
             ],
             buttonText: 'Tour buchen',
-            buttonAction: 'mailto:athelas-diving@oceantoearth.life?subject=Buchung Geführte Tour'
+            buttonAction: 'contact-modal'
         },
         'underwater-work-ecology': {
             title: 'Aquatische Ökologie & Unterwasserarbeiten',
@@ -629,7 +629,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Exkursion zur Meeresstation'
             ],
             buttonText: 'Kontakt für Details',
-            buttonAction: 'mailto:athelas-diving@oceantoearth.life?subject=Anfrage Aquatische Ökologie & Unterwasserarbeiten'
+            buttonAction: 'contact-modal'
         },
         'mindfulness': {
             title: 'Unterwasser-Meditation & Wellness',
@@ -647,7 +647,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Professionelle Anleitung'
             ],
             buttonText: 'Preis anfragen',
-            buttonAction: 'mailto:athelas-diving@oceantoearth.life?subject=Buchung Mindfulness Session'
+            buttonAction: 'contact-modal'
         },
         'photography': {
             title: 'Professionelle Unterwasserfotografie',
@@ -665,7 +665,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Druckfertige Dateien'
             ],
             buttonText: 'Preis anfragen',
-            buttonAction: 'mailto:athelas-diving@oceantoearth.life?subject=Buchung Fotosession'
+            buttonAction: 'contact-modal'
         }
     };
 
@@ -691,6 +691,24 @@ document.addEventListener('DOMContentLoaded', function() {
             <li><i class="fas fa-check"></i> ${feature}</li>
         `).join('');
         
+        // Language-specific "What's Included" text
+        const includedText = {
+            'en': 'What\'s Included:',
+            'fr': 'Ce qui est inclus :',
+            'it': 'Cosa è incluso:',
+            'de': 'Was ist enthalten:'
+        };
+        
+        const includedLabel = includedText[lang] || includedText['en'];
+        
+        // Handle button action - if it's 'contact-modal', open the contact modal instead
+        let buttonOnClick = '';
+        if (data.buttonAction === 'contact-modal') {
+            buttonOnClick = `onclick="closeServiceModal(); openContactModal('${lang}')"`;
+        } else {
+            buttonOnClick = `onclick="window.location.href='${data.buttonAction}'"`;
+        }
+        
         return `
             <h2 class="modal-title">${data.title}</h2>
             <p class="modal-description">${data.description}</p>
@@ -700,14 +718,14 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
             
             <div class="modal-features">
-                <h5>What's Included:</h5>
+                <h5>${includedLabel}</h5>
                 <ul>
                     ${featuresHTML}
                 </ul>
             </div>
             
             <div class="modal-cta">
-                <button class="btn-primary" onclick="window.location.href='${data.buttonAction}'">${data.buttonText}</button>
+                <button class="btn-primary" ${buttonOnClick}>${data.buttonText}</button>
             </div>
         `;
     }
@@ -724,6 +742,14 @@ document.addEventListener('DOMContentLoaded', function() {
         modal.classList.remove('active');
         document.body.style.overflow = '';
     }
+    
+    // Close service modal function (for use in button onclick)
+    function closeServiceModal() {
+        closeModal();
+    }
+    
+    // Make closeServiceModal available globally
+    window.closeServiceModal = closeServiceModal;
     
     // Event listeners for service cards
     serviceCards.forEach(card => {
