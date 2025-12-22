@@ -85,7 +85,7 @@
             <div class="container">
                 <h2>Services & Cours</h2>
                 <div class="services-grid">
-                    <div class="service-card">
+                    <div class="service-card" data-service="underwater-work-ecology">
                         <div class="service-image">
                             <img src="../images/underwater_work03.JPG" alt="Services Professionnels" class="service-img">
                         </div>
@@ -98,7 +98,7 @@
                         </div>
                     </div>
                     
-                    <div class="service-card">
+                    <div class="service-card" data-service="underwater-work-ecology">
                         <div class="service-image">
                             <img src="../images/nudi_01.jpeg" alt="Cours Personnalisés" class="service-img">
                         </div>
@@ -159,6 +159,18 @@
             </div>
         </div>
     </footer>
+
+    <div class="service-modal" id="serviceModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <!-- Modal content will be dynamically loaded here -->
+            </div>
+        </div>
+    </div>
 
     <div class="contact-modal" id="contactModal">
         <div class="modal-overlay"></div>
