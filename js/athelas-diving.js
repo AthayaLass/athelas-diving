@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 {
                     title: 'Advanced Adventure Diver',
                     icon: 'fas fa-star',
-                    description: '5 adventure dives (e.g., deep, navigation, night), gear rental optional.',
+                    description: '5 adventure dives (e.g., deep, navigation, night). Contact me for information on where to rent equipment and what to rent.',
                     price: 'CHF 410.–'
                 },
                 {
@@ -182,10 +182,10 @@ document.addEventListener('DOMContentLoaded', function() {
             ],
             features: [
                 'Professional instruction',
-                'All equipment provided',
                 'Certification materials',
                 'Individual attention',
-                'Flexible scheduling'
+                'Flexible scheduling',
+                'Contact me for equipment rental information'
             ],
             buttonText: 'Contact for Details',
             buttonAction: 'contact-modal'
@@ -203,10 +203,10 @@ document.addEventListener('DOMContentLoaded', function() {
             ],
             features: [
                 'Professional instruction',
-                'All equipment provided',
                 'Safety briefing',
                 'Pool session',
-                'Open water experience'
+                'Open water experience',
+                'Contact me for equipment rental information'
             ],
             buttonText: 'Book Your Initiation',
             buttonAction: 'contact-modal'
@@ -224,10 +224,10 @@ document.addEventListener('DOMContentLoaded', function() {
             ],
             features: [
                 'Professional guide',
-                'Equipment rental',
                 'Marine life identification',
                 'Safety briefing',
-                'Underwater photography tips'
+                'Underwater photography tips',
+                'Contact me for information on where to rent equipment and what to rent'
             ],
             buttonText: 'Request Quote',
             buttonAction: 'contact-modal'
@@ -342,16 +342,16 @@ document.addEventListener('DOMContentLoaded', function() {
             description: 'Cours de plongée complets de débutant à professionnel. Formation personnalisée avec attention individuelle.',
             pricing: [
                 { title: 'Plongeur Open Water', icon: 'fas fa-star', description: 'Certification de base. 2 sessions en eau confinée, 3-4 plongées en eau libre, eLearning.', price: 'CHF 470.–' },
-                { title: 'Plongeur Advanced Adventure', icon: 'fas fa-star', description: '5 plongées d\'aventure (profonde, navigation, nuit), location d\'équipement optionnelle.', price: 'CHF 410.–' },
+                { title: 'Plongeur Advanced Adventure', icon: 'fas fa-star', description: '5 plongées d\'aventure (profonde, navigation, nuit). Contactez-moi pour des informations sur où louer l\'équipement et quoi louer.', price: 'CHF 410.–' },
                 { title: 'Plongeur Rescue', icon: 'fas fa-crown', description: 'Sécurité, gestion du stress, techniques de sauvetage, 2 jours, scénarios inclus.', price: 'CHF 630.–' },
                 { title: 'Divemaster', icon: 'fas fa-crown', description: 'Cours de leadership. Théorie, piscine, stage.', price: 'CHF 1,080.– à 1,620.–' }
             ],
             features: [
                 'Instruction professionnelle',
-                'Équipement complet fourni',
                 'Matériaux de certification',
                 'Attention individuelle',
-                'Planning flexible'
+                'Planning flexible',
+                'Contactez-moi pour des informations sur la location d\'équipement'
             ],
             buttonText: 'Contactez-nous pour les détails',
             buttonAction: 'contact-modal'
@@ -364,10 +364,10 @@ document.addEventListener('DOMContentLoaded', function() {
             ],
             features: [
                 'Instruction professionnelle',
-                'Équipement complet fourni',
                 'Briefing de sécurité',
                 'Session en piscine',
-                'Expérience en eau libre'
+                'Expérience en eau libre',
+                'Contactez-moi pour des informations sur la location d\'équipement'
             ],
             buttonText: 'Réservez votre initiation',
             buttonAction: 'contact-modal'
@@ -380,10 +380,10 @@ document.addEventListener('DOMContentLoaded', function() {
             ],
             features: [
                 'Guide professionnel',
-                'Location d\'équipement',
                 'Identification de la faune marine',
                 'Briefing de sécurité',
-                'Conseils en photographie sous-marine'
+                'Conseils en photographie sous-marine',
+                'Contactez-moi pour des informations sur où louer l\'équipement et quoi louer'
             ],
             buttonText: 'Réservez votre tour',
             buttonAction: 'contact-modal'
@@ -453,16 +453,16 @@ document.addEventListener('DOMContentLoaded', function() {
             description: 'Corsi di immersione completi dal principiante al livello professionale. Formazione personalizzata con attenzione individuale.',
             pricing: [
                 { title: 'Subacqueo Open Water', icon: 'fas fa-star', description: 'Certificazione base. 2 sessioni in acque confinate, 3-4 immersioni in acque libere, eLearning.', price: 'CHF 470.–' },
-                { title: 'Subacqueo Advanced Adventure', icon: 'fas fa-star', description: '5 immersioni avventura (profonda, navigazione, notturna, ecc.), noleggio attrezzatura opzionale.', price: 'CHF 410.–' },
+                { title: 'Subacqueo Advanced Adventure', icon: 'fas fa-star', description: '5 immersioni avventura (profonda, navigazione, notturna, ecc.). Contattami per informazioni su dove noleggiare l\'attrezzatura e cosa noleggiare.', price: 'CHF 410.–' },
                 { title: 'Subacqueo Rescue', icon: 'fas fa-crown', description: 'Sicurezza, gestione dello stress, tecniche di salvataggio, 2 giorni, scenari inclusi.', price: 'CHF 630.–' },
                 { title: 'Divemaster', icon: 'fas fa-crown', description: 'Corso di leadership. Teoria, piscina, tirocinio.', price: 'CHF 1,080.– a 1,620.–' }
             ],
             features: [
                 'Istruttore professionale',
-                'Tutta l’attrezzatura fornita',
                 'Materiali di certificazione',
                 'Attenzione individuale',
-                'Orari flessibili'
+                'Orari flessibili',
+                'Contattami per informazioni sul noleggio attrezzatura'
             ],
             buttonText: 'Contattaci per dettagli',
             buttonAction: 'contact-modal'
@@ -475,10 +475,10 @@ document.addEventListener('DOMContentLoaded', function() {
             ],
             features: [
                 'Istruttore professionale',
-                'Tutta l\'attrezzatura fornita',
                 'Briefing di sicurezza',
                 'Sessione in piscina',
-                'Esperienza in acque libere'
+                'Esperienza in acque libere',
+                'Contattami per informazioni sul noleggio attrezzatura'
             ],
             buttonText: 'Prenota la tua iniziazione',
             buttonAction: 'contact-modal'
@@ -491,10 +491,10 @@ document.addEventListener('DOMContentLoaded', function() {
             ],
             features: [
                 'Guida professionale',
-                'Noleggio attrezzatura',
                 'Identificazione fauna marina',
                 'Briefing sicurezza',
-                'Consigli fotografia subacquea'
+                'Consigli fotografia subacquea',
+                'Contattami per informazioni su dove noleggiare l\'attrezzatura e cosa noleggiare'
             ],
             buttonText: 'Prenota il tuo tour',
             buttonAction: 'contact-modal'
@@ -564,16 +564,16 @@ document.addEventListener('DOMContentLoaded', function() {
             description: 'Umfassende Tauchkurse vom Anfänger bis zum Profi. Individuelle Betreuung und persönliche Ausbildung.',
             pricing: [
                 { title: 'Open Water Taucher', icon: 'fas fa-star', description: 'Einstiegszertifikat. 2 begrenzte Wassersessions, 3-4 Freiwassertauchgänge, eLearning.', price: 'CHF 470.–' },
-                { title: 'Advanced Adventure Taucher', icon: 'fas fa-star', description: '5 Abenteuertauchgänge (z.B. Tiefe, Navigation, Nacht), Ausrüstungsverleih optional.', price: 'CHF 410.–' },
+                { title: 'Advanced Adventure Taucher', icon: 'fas fa-star', description: '5 Abenteuertauchgänge (z.B. Tiefe, Navigation, Nacht). Kontaktiere mich für Informationen, wo man Ausrüstung mieten kann und was gemietet werden sollte.', price: 'CHF 410.–' },
                 { title: 'Rescue Taucher', icon: 'fas fa-crown', description: 'Sicherheit, Stressmanagement, Rettungstechniken, 2 Tage, inkl. Szenarien.', price: 'CHF 630.–' },
                 { title: 'Divemaster', icon: 'fas fa-crown', description: 'Führungskurs. Theorie, Pool, Praktikum.', price: 'CHF 1,080.– bis 1,620.–' }
             ],
             features: [
                 'Professionelle Anleitung',
-                'Komplette Ausrüstung inklusive',
                 'Zertifizierungsmaterialien',
                 'Individuelle Betreuung',
-                'Flexible Terminplanung'
+                'Flexible Terminplanung',
+                'Kontaktiere mich für Informationen zum Ausrüstungsverleih'
             ],
             buttonText: 'Kontakt für Details',
             buttonAction: 'contact-modal'
@@ -586,10 +586,10 @@ document.addEventListener('DOMContentLoaded', function() {
             ],
             features: [
                 'Professionelle Anleitung',
-                'Komplette Ausrüstung inklusive',
                 'Sicherheitsbriefing',
                 'Pool-Session',
-                'Freiwassererfahrung'
+                'Freiwassererfahrung',
+                'Kontaktiere mich für Informationen zum Ausrüstungsverleih'
             ],
             buttonText: 'Initiation buchen',
             buttonAction: 'contact-modal'
@@ -602,10 +602,10 @@ document.addEventListener('DOMContentLoaded', function() {
             ],
             features: [
                 'Professioneller Guide',
-                'Ausrüstungsverleih',
                 'Bestimmung der Meeresfauna',
                 'Sicherheitsbriefing',
-                'Tipps zur Unterwasserfotografie'
+                'Tipps zur Unterwasserfotografie',
+                'Kontaktiere mich für Informationen, wo man Ausrüstung mieten kann und was gemietet werden sollte'
             ],
             buttonText: 'Tour buchen',
             buttonAction: 'contact-modal'
