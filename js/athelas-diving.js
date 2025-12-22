@@ -303,33 +303,33 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         'photography': {
             title: 'Professional Underwater Photography',
-            description: 'Preserve your underwater memories with stunning professional photography. Our expert photographers capture the beauty of marine life and your diving adventures.',
+            description: 'Preserve your underwater memories with stunning professional photography. Our expert photographers capture the beauty of marine life and your diving adventures. Photos are provided in raw format without editing.',
             pricing: [
                 {
                     title: 'Basic Package',
                     icon: 'fas fa-camera',
-                    description: '30 minutes session, 10 edited photos',
+                    description: '30 minutes session, 10 raw photos',
                     price: 'On Request'
                 },
                 {
                     title: 'Standard Package',
                     icon: 'fas fa-camera-retro',
-                    description: '1 hour session, 25 edited photos',
+                    description: '1 hour session, 25 raw photos',
                     price: 'On Request'
                 },
                 {
                     title: 'Premium Package',
                     icon: 'fas fa-film',
-                    description: '2 hour session, 50 edited photos + video',
+                    description: '2 hour session, 50 raw photos + video',
                     price: 'On Request'
                 }
             ],
             features: [
                 'Professional equipment',
                 'High-resolution images',
-                'Professional editing',
+                'Raw format photos (no editing)',
                 'Digital delivery',
-                'Print-ready files'
+                'High-quality files'
             ],
             buttonText: 'Contact for Pricing',
             buttonAction: 'contact-modal'
@@ -429,18 +429,18 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         'photography': {
             title: 'Photographie Sous-Marine Professionnelle',
-            description: 'Conservez vos souvenirs de plongée avec des photos professionnelles de haute qualité.',
+            description: 'Conservez vos souvenirs de plongée avec des photos professionnelles de haute qualité. Les photos sont fournies en format brut sans retouche.',
             pricing: [
-                { title: 'Pack de Base', icon: 'fas fa-camera', description: '30 minutes, 10 photos retouchées', price: 'Sur demande' },
-                { title: 'Pack Standard', icon: 'fas fa-camera-retro', description: '1 heure, 25 photos retouchées', price: 'Sur demande' },
-                { title: 'Pack Premium', icon: 'fas fa-film', description: '2 heures, 50 photos + vidéo', price: 'Sur demande' }
+                { title: 'Pack de Base', icon: 'fas fa-camera', description: '30 minutes, 10 photos brutes', price: 'Sur demande' },
+                { title: 'Pack Standard', icon: 'fas fa-camera-retro', description: '1 heure, 25 photos brutes', price: 'Sur demande' },
+                { title: 'Pack Premium', icon: 'fas fa-film', description: '2 heures, 50 photos brutes + vidéo', price: 'Sur demande' }
             ],
             features: [
                 'Équipement professionnel',
                 'Images haute résolution',
-                'Retouche professionnelle',
+                'Photos en format brut (sans retouche)',
                 'Livraison digitale',
-                'Fichiers prêts pour l\'impression'
+                'Fichiers haute qualité'
             ],
             buttonText: 'Demandez un devis',
             buttonAction: 'contact-modal'
@@ -540,18 +540,18 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         'photography': {
             title: 'Fotografia Subacquea Professionale',
-            description: 'Conserva i tuoi ricordi subacquei con fotografie professionali di alta qualità.',
+            description: 'Conserva i tuoi ricordi subacquei con fotografie professionali di alta qualità. Le foto sono fornite in formato raw senza ritocco.',
             pricing: [
-                { title: 'Pacchetto Base', icon: 'fas fa-camera', description: '30 minuti, 10 foto ritoccate', price: 'Su richiesta' },
-                { title: 'Pacchetto Standard', icon: 'fas fa-camera-retro', description: '1 ora, 25 foto ritoccate', price: 'Su richiesta' },
-                { title: 'Pacchetto Premium', icon: 'fas fa-film', description: '2 ore, 50 foto + video', price: 'Su richiesta' }
+                { title: 'Pacchetto Base', icon: 'fas fa-camera', description: '30 minuti, 10 foto raw', price: 'Su richiesta' },
+                { title: 'Pacchetto Standard', icon: 'fas fa-camera-retro', description: '1 ora, 25 foto raw', price: 'Su richiesta' },
+                { title: 'Pacchetto Premium', icon: 'fas fa-film', description: '2 ore, 50 foto raw + video', price: 'Su richiesta' }
             ],
             features: [
                 'Attrezzatura professionale',
                 'Immagini ad alta risoluzione',
-                'Ritocco professionale',
+                'Foto in formato raw (senza ritocco)',
                 'Consegna digitale',
-                'File pronti per la stampa'
+                'File di alta qualità'
             ],
             buttonText: 'Richiedi un preventivo',
             buttonAction: 'contact-modal'
