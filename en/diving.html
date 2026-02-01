@@ -3,35 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2NEP9YXBDC"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-2NEP9YXBDC');
-    </script>
-    
     <title>Athelas Diving - Diving Courses & Excursions</title>
-    
-    <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://athelas-diving.com/en/diving.html">
-    <meta property="og:title" content="Athelas Diving - Diving Courses & Excursions">
-    <meta property="og:description" content="Professional SDI diving courses and guided excursions for all levels. From beginner to advanced specialties including night diving, deep diving, peak performance buoyancy, navigation, aquatic ecology, and nitrox.">
-    <meta property="og:image" content="https://athelas-diving.com/images/Logo_Athelas_social.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="1200">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:site_name" content="Athelas Diving">
-    
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Athelas Diving - Diving Courses & Excursions">
-    <meta name="twitter:description" content="Professional SDI diving courses and guided excursions for all levels. From beginner to advanced specialties including night diving, deep diving, peak performance buoyancy, navigation, aquatic ecology, and nitrox.">
-    <meta name="twitter:image" content="https://athelas-diving.com/images/Logo_Athelas_social.png">
     
     <link rel="stylesheet" href="../css/athelas-diving.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -88,7 +60,7 @@
                 <h2>SDI Instructor Qualifications</h2>
                 <div class="professional-content">
                     <div class="professional-text">
-                        <p>I am <strong>Antoine Baud</strong>, a certified SDI (Scuba Diving International) instructor, offering comprehensive diving education and guided excursions. My expertise includes the following specialties:</p>
+                        <p>I am a certified SDI (Scuba Diving International) instructor, offering comprehensive diving education and guided excursions. I am currently working on my instructor certification for the following specialties, which will be available soon:</p>
                         <ul>
                             <li><strong>Night Diving</strong> - Explore the underwater world after dark and discover nocturnal marine life</li>
                             <li><strong>Deep Diving</strong> - Advanced training for dives beyond 18 meters</li>
@@ -98,7 +70,7 @@
                             <li><strong>Nitrox (Enriched Air) < 40%</strong> - Extend your bottom time with enriched air nitrox diving</li>
                         </ul>
                         <h3>International Certification Standards</h3>
-                        <p>SDI is a member of the WRSTC (World Recreational Scuba Training Council), which establishes global standards for recreational scuba diving training. These are the same international standards recognized by major diving organizations worldwide, including PADI, SSI, and others. This means your SDI certification is recognized internationally and follows the same rigorous safety and training standards as other leading certification agencies.</p>
+                        <p>SDI is a member of the WRSTC (World Recreational Scuba Training Council), which establishes global standards for recreational scuba diving training. These are the same international standards recognized by major diving organizations worldwide, including PADI, SSI, and others. This means your SDI certification is recognized globally and follows the same rigorous safety and training standards as other leading certification agencies.</p>
                         <p>All certifications issued through SDI meet WRSTC standards, ensuring that your diving credentials are internationally recognized and accepted at dive centers around the world. Whether you're diving in the Caribbean, the Red Sea, or the Pacific, your SDI certification will be recognized wherever you go.</p>
                     </div>
                     <div class="professional-image">
@@ -111,7 +83,22 @@
         <section id="services" class="services">
             <div class="container">
                 <h2>Courses & Services</h2>
+                <p class="service-note" style="margin-top: -0.5rem; margin-bottom: 2rem;">* Please note that diving equipment should be rented from a dive shop. I can assist you by providing dive shop recommendations and advising you on which gear to rent for your course or excursion.</p>
                 <div class="services-grid">
+                    <div class="service-card" data-service="diving-initiation">
+                        <div class="service-image">
+                            <img src="../images/antoine_06.jpg" alt="Diving Initiation" class="service-img">
+                            <div class="promotional-badge">% PROMOTION</div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Diving Initiation</h3>
+                            <p class="service-teaser">Perfect introduction to scuba diving for beginners. Experience the underwater world safely with professional guidance. <strong>Spring Special:</strong> Free initiation this spring! Equipment rental not included - I'll help you find the right dive shop and recommend the gear you need.</p>
+                            <div class="service-contact-button">
+                                <button class="btn-contact" onclick="openContactModal('en')">Get in Touch</button>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <div class="service-card" data-service="dive-courses">
                         <div class="service-image">
                             <img src="../images/antoine_07.JPG" alt="Dive Courses" class="service-img">
@@ -125,19 +112,6 @@
                         </div>
                     </div>
                     
-                    <div class="service-card" data-service="diving-initiation">
-                        <div class="service-image">
-                            <img src="../images/antoine_06.jpg" alt="Diving Initiation" class="service-img">
-                        </div>
-                        <div class="service-content">
-                            <h3>Diving Initiation</h3>
-                            <p class="service-teaser">Perfect introduction to scuba diving for beginners. Experience the underwater world safely with professional guidance.</p>
-                            <div class="service-contact-button">
-                                <button class="btn-contact" onclick="openContactModal('en')">Get in Touch</button>
-                            </div>
-                        </div>
-                    </div>
-                    
                     <div class="service-card" data-service="guided-tours" data-coming-soon="true">
                         <div class="service-image">
                             <img src="../images/arborek.jpeg" alt="Guided Tours" class="service-img">
@@ -145,13 +119,13 @@
                         </div>
                         <div class="service-content">
                             <h3>Guided Excursions</h3>
-                            <p class="service-teaser">Explore pristine underwater locations with expert guidance. Discover hidden marine treasures and create unforgettable memories.</p>
+                            <p class="service-teaser">Explore pristine underwater locations with expert guidance. Discover hidden marine treasures and create unforgettable memories. Combined retreat packages with Veranaturae.ch are currently in development.</p>
                         </div>
                     </div>
                     
                     <div class="service-card" data-service="specialties" data-coming-soon="true">
                         <div class="service-image">
-                            <img src="../images/antoine_03.jpeg" alt="Specialty Courses" class="service-img">
+                            <img src="../images/antoine_07.JPG" alt="Specialty Courses" class="service-img">
                             <div class="coming-soon-badge">Coming Soon</div>
                         </div>
                         <div class="service-content">
@@ -190,7 +164,7 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2024 Athelas Diving by Antoine Baud. All rights reserved.</p>
+                <p>&copy; 2024 Athelas Diving. All rights reserved.</p>
                 <div class="sdi-affiliation">
                     <a href="https://www.tdisdi.com/" target="_blank" rel="noopener noreferrer" class="sdi-logo-link">
                         <img src="../images/SDI_Letter_Color_RGB_v0824-01.svg" alt="SDI Certified Instructor" class="sdi-logo">

@@ -955,6 +955,36 @@ body.menu-open {
     animation: pulse 2s infinite;
 }
 
+.promotional-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: linear-gradient(135deg, rgba(255, 87, 34, 1), rgba(255, 152, 0, 1));
+    color: var(--white);
+    padding: 0.45rem 0.9rem;
+    border-radius: 19px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    box-shadow: 0 4.5px 15px rgba(255, 87, 34, 0.6), 0 0 15px rgba(255, 152, 0, 0.4);
+    z-index: 10;
+    animation: promotionalPulse 1.5s ease-in-out infinite;
+    border: 1.5px solid rgba(255, 255, 255, 0.3);
+    text-shadow: 0 1.5px 3px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes promotionalPulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 4.5px 15px rgba(255, 87, 34, 0.6), 0 0 15px rgba(255, 152, 0, 0.4);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 6px 19px rgba(255, 87, 34, 0.8), 0 0 23px rgba(255, 152, 0, 0.6);
+    }
+}
+
 .service-contact-button {
     margin-top: 1rem;
     text-align: center;
@@ -2472,5 +2502,308 @@ footer {
 
     .healthy-diving-cta h3 {
         font-size: 1.5rem;
+    }
+}
+
+/* Store Section Styles */
+.store-section {
+    padding: 6rem 0;
+    background: var(--white);
+    position: relative;
+}
+
+.store-section h2 {
+    text-align: center;
+    color: var(--main);
+    margin-bottom: 4rem;
+    font-size: 3rem;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 2px;
+}
+
+.store-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+.product-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 10px 30px rgba(2, 20, 21.6, 0.1);
+    border: 1px solid rgba(2, 20, 21.6, 0.1);
+    margin-bottom: 3rem;
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 15px 40px rgba(2, 20, 21.6, 0.15);
+    transform: translateY(-5px);
+}
+
+.product-info {
+    margin-bottom: 2rem;
+}
+
+.product-info h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    color: var(--main);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.product-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.product-price {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.price-amount {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--main);
+    background: linear-gradient(135deg, rgba(2, 20, 21.6, 0.1), rgba(3, 30, 32, 0.1));
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.payment-methods {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.payment-info {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1rem;
+    color: var(--text);
+    background: rgba(2, 20, 21.6, 0.05);
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+}
+
+.payment-info i {
+    color: var(--accent);
+    font-size: 1.2rem;
+}
+
+.product-purchase {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 2px solid rgba(2, 20, 21.6, 0.1);
+}
+
+.btn-purchase {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: linear-gradient(135deg, var(--main), var(--accent));
+    color: var(--white);
+    padding: 1.2rem 3rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(2, 20, 21.6, 0.2);
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 0.5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-purchase::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: all 0.5s ease;
+}
+
+.btn-purchase:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(2, 20, 21.6, 0.3);
+    background: linear-gradient(135deg, var(--accent), var(--highlight));
+}
+
+.btn-purchase:hover::before {
+    left: 100%;
+}
+
+.btn-purchase i {
+    font-size: 1.3rem;
+}
+
+.payhip-button-placeholder {
+    margin-bottom: 1rem;
+}
+
+.placeholder-note {
+    margin-top: 1rem;
+    color: var(--accent);
+    font-style: italic;
+}
+
+.store-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.info-box {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(2, 20, 21.6, 0.08);
+    border: 1px solid rgba(2, 20, 21.6, 0.1);
+    transition: all 0.3s ease;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(2, 20, 21.6, 0.12);
+}
+
+.info-box i {
+    font-size: 2.5rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.info-box h4 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.3rem;
+    color: var(--main);
+    margin-bottom: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.info-box p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text);
+    margin: 0;
+}
+
+.info-box a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.info-box a:hover {
+    color: var(--main);
+    text-decoration: underline;
+}
+
+/* Responsive Design for Store Section */
+@media (max-width: 768px) {
+    .store-section {
+        padding: 4rem 0;
+    }
+
+    .store-section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+        padding: 0 1rem;
+    }
+
+    .store-content {
+        padding: 0 1rem;
+    }
+
+    .product-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .product-info h3 {
+        font-size: 1.6rem;
+    }
+
+    .product-description {
+        font-size: 1rem;
+    }
+
+    .price-amount {
+        font-size: 2rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .btn-purchase {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .store-info {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .info-box {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .store-section h2 {
+        font-size: 2rem;
+        padding: 0 0.5rem;
+    }
+
+    .store-content {
+        padding: 0 0.5rem;
+    }
+
+    .product-card {
+        padding: 1.5rem 1rem;
+    }
+
+    .product-info h3 {
+        font-size: 1.4rem;
+    }
+
+    .price-amount {
+        font-size: 1.8rem;
+        padding: 0.7rem 1.2rem;
+    }
+
+    .btn-purchase {
+        padding: 0.9rem 1.5rem;
+        font-size: 0.95rem;
+    }
+
+    .info-box {
+        padding: 1.2rem;
+    }
+
+    .info-box i {
+        font-size: 2rem;
+    }
+
+    .info-box h4 {
+        font-size: 1.1rem;
     }
 } 

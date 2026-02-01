@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2NEP9YXBDC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-2NEP9YXBDC');
+    </script>
+    
+    <title>Athelas Diving - Store</title>
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://athelas-diving.com/en/store.html">
+    <meta property="og:title" content="Athelas Diving - Store">
+    <meta property="og:description" content="Purchase diving services and products from Athelas Diving. Professional diving experiences and educational resources.">
+    <meta property="og:image" content="https://athelas-diving.com/images/Logo_Athelas_social.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="1200">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:site_name" content="Athelas Diving">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Athelas Diving - Store">
+    <meta name="twitter:description" content="Purchase diving services and products from Athelas Diving. Professional diving experiences and educational resources.">
+    <meta name="twitter:image" content="https://athelas-diving.com/images/Logo_Athelas_social.png">
+    
+    <link rel="stylesheet" href="../css/athelas-diving.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Payhip JavaScript - Replace with your actual Payhip embed code from your dashboard -->
+    <!-- <script src="https://payhip.com/js/embed.js"></script> -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="home.html" class="logo-link">
+                    <img src="../images/Logo_Athelas.png" alt="Athelas Diving Logo" class="logo">
+                </a>
+                
+                <div class="burger-menu" id="burgerMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <nav class="nav-menu" id="navMenu">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="diving.html">Diving</a></li>
+                        <li><a href="aquatic-ecology.html">Aquatic Ecology</a></li>
+                        <li><a href="wellness-art.html">Wellness & Art</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                    <div class="language-selector">
+                        <div class="language-flags">
+                            <div class="language-flag en active" onclick="changeLanguage('en')" title="English"></div>
+                            <div class="language-flag fr" onclick="changeLanguage('fr')" title="Français"></div>
+                            <div class="language-flag it" onclick="changeLanguage('it')" title="Italiano"></div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" style="background-image: linear-gradient(rgba(2, 20, 21.6, 0.3), rgba(3, 30, 32, 0.4)), url('../images/ocean_landscape05.JPG');">
+            <div class="container">
+                <h1>Store</h1>
+                <p class="subtitle">Discover Our Services</p>
+            </div>
+        </section>
+
+        <section class="store-section">
+            <div class="container">
+                <h2>Available Services</h2>
+                <div class="store-content">
+                    <div class="product-card">
+                        <div class="product-info">
+                            <h3>Placeholder Service</h3>
+                            <p class="product-description">
+                                This is a placeholder service for testing purposes. Replace this with your actual service description once you've set up your product in Payhip.
+                            </p>
+                            <div class="product-price">
+                                <span class="price-amount">5 CHF</span>
+                            </div>
+                            <div class="payment-methods">
+                                <p class="payment-info">
+                                    <i class="fas fa-credit-card"></i>
+                                    <span>Payment Methods: Credit Cards, TWINT</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="product-purchase">
+                            <!-- Payhip Buy Button - Replace this with your actual Payhip embed code -->
+                            <!-- To get your embed code:
+                                 1. Log in to your Payhip account
+                                 2. Go to Products > Your Product > Share/Embed
+                                 3. Select "Embed Button" tab
+                                 4. Copy the HTML code and paste it here -->
+                            
+                            <!-- Example placeholder - Replace with actual Payhip button code -->
+                            <div class="payhip-button-placeholder">
+                                <a href="https://payhip.com/AthelasDiving" target="_blank" rel="noopener noreferrer" class="btn-purchase">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Purchase Now</span>
+                                </a>
+                                <p class="placeholder-note">
+                                    <small>Note: Replace this button with your Payhip embed code from your dashboard</small>
+                                </p>
+                            </div>
+                            
+                            <!-- Your Payhip embed code should look something like this:
+                            <div id="payhip-button-container"></div>
+                            <script>
+                                Payhip.init({
+                                    productId: 'YOUR_PRODUCT_ID',
+                                    buttonText: 'Buy Now',
+                                    buttonColor: '#02141B'
+                                });
+                            </script>
+                            -->
+                        </div>
+                    </div>
+                    
+                    <div class="store-info">
+                        <div class="info-box">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Secure Payment</h4>
+                            <p>All payments are processed securely through Stripe and Mollie. Your payment information is encrypted and protected.</p>
+                        </div>
+                        <div class="info-box">
+                            <i class="fas fa-shipping-fast"></i>
+                            <h4>Instant Access</h4>
+                            <p>Digital products and services are delivered immediately after purchase confirmation.</p>
+                        </div>
+                        <div class="info-box">
+                            <i class="fas fa-headset"></i>
+                            <h4>Customer Support</h4>
+                            <p>Need help? Contact us at <a href="mailto:a.baud@athelas-diving.com">a.baud@athelas-diving.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Athelas Diving by Antoine Baud. All rights reserved.</p>
+                <div class="sdi-affiliation">
+                    <a href="https://www.tdisdi.com/" target="_blank" rel="noopener noreferrer" class="sdi-logo-link">
+                        <img src="../images/SDI_Letter_Color_RGB_v0824-01.svg" alt="SDI Certified Instructor" class="sdi-logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/athelas-diving.js"></script>
+    <script>
+        // Mark active page in navbar
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPage = window.location.pathname.split('/').pop() || 'home.html';
+            const navLinks = document.querySelectorAll('nav a[href]');
+            navLinks.forEach(link => {
+                const linkPage = link.getAttribute('href');
+                if (linkPage === currentPage || (currentPage === '' && linkPage === 'home.html')) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        function changeLanguage(lang) {
+            const currentPath = window.location.pathname;
+            const fileName = currentPath.split('/').pop() || 'home.html';
+            localStorage.setItem('preferredLanguage', lang);
+            window.location.href = `../${lang}/${fileName}`;
+        }
+    </script>
+</body>
+</html>
+
