@@ -943,6 +943,47 @@ body.menu-open {
     opacity: 0.8;
 }
 
+.service-teaser em {
+    font-style: normal;
+    font-weight: 700;
+    color: var(--main);
+}
+
+.service-collaboration {
+    text-align: center;
+    margin: 1rem 0;
+    padding: 0.75rem;
+    background: rgba(240, 240, 240, 0.6);
+    border-radius: 12px;
+}
+
+.service-collaboration-text {
+    font-size: 0.85rem;
+    color: var(--text);
+    opacity: 0.85;
+    margin-bottom: 0.5rem;
+}
+
+.service-collaboration .veranaturae-logo-link {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.service-collaboration-logo {
+    max-width: 140px;
+    height: auto;
+    filter: drop-shadow(0 2px 8px rgba(2, 20, 21.6, 0.2));
+    transition: filter 0.3s ease;
+}
+
+.veranaturae-logo-link:hover {
+    transform: scale(1.05);
+}
+
+.veranaturae-logo-link:hover img {
+    filter: drop-shadow(0 6px 18px rgba(2, 20, 21.6, 0.35));
+}
+
 .service-status {
     text-align: center;
     margin-top: 1rem;
@@ -1297,6 +1338,51 @@ body.menu-open {
     padding: 0.8rem 1.2rem;
     border-radius: 12px;
     margin-top: 1rem;
+}
+
+.pricing-item .price-group {
+    display: block;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--main);
+    opacity: 0.85;
+    margin-top: 0.5rem;
+}
+
+.pricing-item .price-note {
+    display: block;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--main);
+    opacity: 0.7;
+    margin-top: 0.4rem;
+}
+
+.pricing-specialty-list {
+    margin: 0.75rem 0 1rem;
+    padding-left: 1.25rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    opacity: 0.9;
+    text-align: justify;
+    list-style-position: outside;
+}
+
+.pricing-specialty-list li {
+    margin-bottom: 0.4rem;
+    text-align: justify;
+}
+
+.pricing-additional-label {
+    font-size: 0.9rem;
+    margin: 0.5rem 0 0.25rem;
+    text-align: justify;
+}
+
+.pricing-additional-list {
+    margin-top: 0.25rem;
 }
 
 .modal-features {

@@ -158,26 +158,53 @@ document.addEventListener('DOMContentLoaded', function() {
                 {
                     title: 'Open Water Diver',
                     icon: 'fas fa-star',
-                    description: 'Full entry-level certification. 2 confined water sessions, 3-4 open water dives, eLearning.',
-                    price: 'CHF 470.–'
+                    description: 'Full entry-level certification. 2 confined water sessions, 3-4 open water dives. Equipment not included - expect more ~200 CHF for gear rental over the course. This is an estimate based on prices at dive shops in the area.',
+                    price: 'CHF 650.–*',
+                    priceGroup: '550 CHF per person if 2 or more',
+                    priceNote: '*Included: Certification fee'
                 },
                 {
                     title: 'Advanced Adventure Diver',
                     icon: 'fas fa-star',
-                    description: '5 adventure dives (e.g., deep, navigation, night). Contact me for information on where to rent equipment and what to rent.',
-                    price: 'CHF 410.–'
+                    description: '5 adventure dives (e.g., deep, navigation, night). Equipment not included - expect more ~200 CHF for gear rental over the course. This is an estimate based on prices at dive shops in the area.',
+                    price: 'CHF 400.–*',
+                    priceNote: '*Included: Certification fee'
                 },
                 {
                     title: 'Rescue Diver',
                     icon: 'fas fa-crown',
-                    description: 'Safety, stress management, rescue techniques, 2 days, incl. scenarios.',
-                    price: 'CHF 630.–'
+                    description: 'Safety, stress management, rescue techniques, 2 days, incl. scenarios. FRTI First Responder (including CPR, AED and O2 provider) available for CHF 200.– per person.',
+                    price: 'CHF 630.–*',
+                    priceNote: '*Included: Certification fee'
                 },
                 {
                     title: 'Dive Master',
                     icon: 'fas fa-crown',
                     description: 'Leadership-level course. Includes theory, pool work, internships.',
-                    price: 'CHF 1,080.– to 1,620.–'
+                    price: 'CHF 850.– to 1,200.–*',
+                    priceNote: '*Included: Certification fee'
+                },
+                {
+                    title: 'Individual Specialisations',
+                    icon: 'fas fa-certificate',
+                    description: 'SDI specialty certifications tailored to your interests. Price varies depending on the specialisation. Contact me for more information.',
+                    specialtyList: [
+                        '<strong>First Aid</strong> - CPR, AED and O₂ Provider - Emergency response training for diving incidents',
+                        '<strong>Computer Nitrox</strong> (&lt;40%) - Extend bottom time with enriched air using a dive computer',
+                        '<strong>Computer Diver</strong> - Master dive computer use for safer, longer dives',
+                        '<strong>Boat</strong> - Skills and procedures for boat-based diving',
+                        '<strong>Shore/Beach</strong> - Techniques for entries and dives from shore',
+                        '<strong>Navigation</strong> - Underwater navigation using compass and natural references',
+                        '<strong>Advanced Buoyancy Control</strong> - Fine-tune trim and buoyancy for minimal impact',
+                        '<strong>Drift</strong> - Safe techniques for diving in currents',
+                        '<strong>Marine Ecosystem Awareness</strong> - Understand marine habitats and responsible diving',
+                        '<strong>Night/Limited Vision</strong> - Explore the underwater world in low-light conditions',
+                        '<strong>Research</strong> (Scientific diving) - Methods for conducting underwater research'
+                    ],
+                    additionalLabel: 'Additional possibilities (contact me for info):',
+                    additionalList: ['Drysuit', 'Marine Conservation'],
+                    price: 'CHF 150.– to 250.–*',
+                    priceNote: '*Included: Certification fee'
                 }
             ],
             features: [
@@ -191,11 +218,11 @@ document.addEventListener('DOMContentLoaded', function() {
             buttonAction: 'contact-modal'
         },
         'diving-initiation': {
-            title: 'Diving Initiation',
+            title: 'Intro Dive',
             description: 'Perfect introduction to scuba diving for beginners. Experience the underwater world safely with professional guidance.',
             pricing: [
                 {
-                    title: 'Diving Initiation',
+                    title: 'Intro Dive',
                     icon: 'fas fa-star',
                     description: 'Perfect introduction to scuba diving for beginners. Experience the underwater world safely with professional guidance.',
                     price: 'CHF 150.– per person'
@@ -208,7 +235,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Open water experience',
                 'Contact me for equipment rental information'
             ],
-            buttonText: 'Book Your Initiation',
+            buttonText: 'Book Your Intro Dive',
             buttonAction: 'contact-modal'
         },
         'guided-tours': {
@@ -341,10 +368,11 @@ document.addEventListener('DOMContentLoaded', function() {
             title: 'Formation Professionnelle de Plongée',
             description: 'Cours de plongée complets de débutant à professionnel. Formation personnalisée avec attention individuelle.',
             pricing: [
-                { title: 'Plongeur Open Water', icon: 'fas fa-star', description: 'Certification de base. 2 sessions en eau confinée, 3-4 plongées en eau libre, eLearning.', price: 'CHF 470.–' },
-                { title: 'Plongeur Advanced Adventure', icon: 'fas fa-star', description: '5 plongées d\'aventure (profonde, navigation, nuit). Contactez-moi pour des informations sur où louer l\'équipement et quoi louer.', price: 'CHF 410.–' },
-                { title: 'Plongeur Rescue', icon: 'fas fa-crown', description: 'Sécurité, gestion du stress, techniques de sauvetage, 2 jours, scénarios inclus.', price: 'CHF 630.–' },
-                { title: 'Divemaster', icon: 'fas fa-crown', description: 'Cours de leadership. Théorie, piscine, stage.', price: 'CHF 1,080.– à 1,620.–' }
+                { title: 'Plongeur Open Water', icon: 'fas fa-star', description: 'Certification de base. 2 sessions en eau confinée, 3-4 plongées en eau libre. Équipement non inclus - prévoyez environ 200 CHF de plus pour la location sur toute la durée du cours. Ce montant est une estimation basée sur les tarifs des magasins de plongée de la région.', price: 'CHF 650.–*', priceGroup: '550 CHF par personne si 2 personnes ou plus', priceNote: '*Inclus : frais de certification' },
+                { title: 'Plongeur Advanced Adventure', icon: 'fas fa-star', description: '5 plongées d\'aventure (profonde, navigation, nuit). Équipement non inclus - prévoyez environ 200 CHF de plus pour la location sur toute la durée du cours. Ce montant est une estimation basée sur les tarifs des magasins de plongée de la région.', price: 'CHF 400.–*', priceNote: '*Inclus : frais de certification' },
+                { title: 'Plongeur Rescue', icon: 'fas fa-crown', description: 'Sécurité, gestion du stress, techniques de sauvetage, 2 jours, scénarios inclus. FRTI First Responder (RCP, DEA et administration d\'O2) disponible pour CHF 200.– par personne.', price: 'CHF 630.–*', priceNote: '*Inclus : frais de certification' },
+                { title: 'Divemaster', icon: 'fas fa-crown', description: 'Cours de leadership. Théorie, piscine, stage.', price: 'CHF 850.– à 1,200.–*', priceNote: '*Inclus : frais de certification' },
+                { title: 'Spécialisations Individuelles', icon: 'fas fa-certificate', description: 'Certifications de spécialité SDI adaptées à vos intérêts. Le prix varie selon la spécialisation. Contactez-moi pour plus d\'informations.', specialtyList: ['<strong>Premiers Secours</strong> - RCP, DEA et administration d\'O₂ - Formation aux interventions d\'urgence en plongée', '<strong>Nitrox Ordinateur</strong> (&lt;40%) - Prolongez le temps de fond avec l\'air enrichi et un ordinateur de plongée', '<strong>Plongeur Ordinateur</strong> - Maîtrisez l\'utilisation de l\'ordinateur de plongée pour des plongées plus sûres', '<strong>Bateau</strong> - Compétences et procédures pour la plongée depuis un bateau', '<strong>Rive/Plage</strong> - Techniques d\'entrée et de plongée depuis le rivage', '<strong>Navigation</strong> - Navigation sous-marine à l\'aide d\'une boussole et de références naturelles', '<strong>Contrôle Avancé de la Flottabilité</strong> - Affinez l\'équilibre et la flottabilité pour un impact minimal', '<strong>Dérive</strong> - Techniques sécurisées pour plonger dans les courants', '<strong>Sensibilisation aux Écosystèmes Marins</strong> - Comprendre les habitats marins et la plongée responsable', '<strong>Nuit/Vision Limitée</strong> - Explorez le monde sous-marin en conditions de faible luminosité', '<strong>Recherche</strong> (Plongée scientifique) - Méthodes pour mener des recherches sous-marines'], additionalLabel: 'Possibilités supplémentaires (contactez-moi pour plus d\'informations) :', additionalList: ['Stagne', 'Conservation Marine'], price: 'CHF 150.– à 250.–*', priceNote: '*Inclus : frais de certification' }
             ],
             features: [
                 'Instruction professionnelle',
@@ -357,10 +385,10 @@ document.addEventListener('DOMContentLoaded', function() {
             buttonAction: 'contact-modal'
         },
         'diving-initiation': {
-            title: 'Initiation à la Plongée',
+            title: 'Intro Dive',
             description: 'Introduction parfaite à la plongée sous-marine pour les débutants. Découvrez le monde sous-marin en toute sécurité avec un guide professionnel.',
             pricing: [
-                { title: 'Initiation à la Plongée', icon: 'fas fa-star', description: 'Introduction parfaite à la plongée sous-marine pour les débutants. Découvrez le monde sous-marin en toute sécurité avec un guide professionnel.', price: 'CHF 150.– par personne' }
+                { title: 'Intro Dive', icon: 'fas fa-star', description: 'Introduction parfaite à la plongée sous-marine pour les débutants. Découvrez le monde sous-marin en toute sécurité avec un guide professionnel.', price: 'CHF 150.– par personne' }
             ],
             features: [
                 'Instruction professionnelle',
@@ -369,7 +397,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Expérience en eau libre',
                 'Contactez-moi pour des informations sur la location d\'équipement'
             ],
-            buttonText: 'Réservez votre initiation',
+            buttonText: 'Réservez votre Intro Dive',
             buttonAction: 'contact-modal'
         },
         'guided-tours': {
@@ -452,10 +480,11 @@ document.addEventListener('DOMContentLoaded', function() {
             title: 'Formazione Subacquea Professionale',
             description: 'Corsi di immersione completi dal principiante al livello professionale. Formazione personalizzata con attenzione individuale.',
             pricing: [
-                { title: 'Subacqueo Open Water', icon: 'fas fa-star', description: 'Certificazione base. 2 sessioni in acque confinate, 3-4 immersioni in acque libere, eLearning.', price: 'CHF 470.–' },
-                { title: 'Subacqueo Advanced Adventure', icon: 'fas fa-star', description: '5 immersioni avventura (profonda, navigazione, notturna, ecc.). Contattami per informazioni su dove noleggiare l\'attrezzatura e cosa noleggiare.', price: 'CHF 410.–' },
-                { title: 'Subacqueo Rescue', icon: 'fas fa-crown', description: 'Sicurezza, gestione dello stress, tecniche di salvataggio, 2 giorni, scenari inclusi.', price: 'CHF 630.–' },
-                { title: 'Divemaster', icon: 'fas fa-crown', description: 'Corso di leadership. Teoria, piscina, tirocinio.', price: 'CHF 1,080.– a 1,620.–' }
+                { title: 'Subacqueo Open Water', icon: 'fas fa-star', description: 'Certificazione base. 2 sessioni in acque confinate, 3-4 immersioni in acque libere. Attrezzatura non inclusa - prevedete circa 200 CHF in più per il noleggio durante il corso. Importo stimato in base ai prezzi dei negozi subacquei della zona.', price: 'CHF 650.–*', priceGroup: '550 CHF a persona se 2 o più persone', priceNote: '*Incluso: tassa di certificazione' },
+                { title: 'Subacqueo Advanced Adventure', icon: 'fas fa-star', description: '5 immersioni avventura (profonda, navigazione, notturna, ecc.). Attrezzatura non inclusa - prevedete circa 200 CHF in più per il noleggio durante il corso. Importo stimato in base ai prezzi dei negozi subacquei della zona.', price: 'CHF 400.–*', priceNote: '*Incluso: tassa di certificazione' },
+                { title: 'Subacqueo Rescue', icon: 'fas fa-crown', description: 'Sicurezza, gestione dello stress, tecniche di salvataggio, 2 giorni, scenari inclusi. FRTI First Responder (RCP, AED e erogazione O2) disponibile a CHF 200.– per persona.', price: 'CHF 630.–*', priceNote: '*Incluso: tassa di certificazione' },
+                { title: 'Divemaster', icon: 'fas fa-crown', description: 'Corso di leadership. Teoria, piscina, tirocinio.', price: 'CHF 850.– a 1,200.–*', priceNote: '*Incluso: tassa di certificazione' },
+                { title: 'Specializzazioni Individuali', icon: 'fas fa-certificate', description: 'Certificazioni di specialità SDI su misura per i vostri interessi. Il prezzo varia in base alla specializzazione. Contattatemi per maggiori informazioni.', specialtyList: ['<strong>Primo Soccorso</strong> - RCP, AED ed erogazione di O₂ - Formazione alle emergenze in immersione', '<strong>Nitrox Computer</strong> (&lt;40%) - Estendete il tempo di fondo con aria arricchita e computer subacqueo', '<strong>Subacqueo Computer</strong> - Padroneggiate l\'uso del computer subacqueo per immersioni più sicure', '<strong>Barca</strong> - Competenze e procedure per le immersioni da barca', '<strong>Costa/Spiaggia</strong> - Tecniche di entrata e immersione dalla riva', '<strong>Navigazione</strong> - Navigazione subacquea con bussola e riferimenti naturali', '<strong>Controllo Avanzato della Galleggiabilità</strong> - Affinate trim e galleggiabilità per un impatto minimo', '<strong>Deriva</strong> - Tecniche sicure per immergersi nelle correnti', '<strong>Consapevolezza degli Ecosistemi Marini</strong> - Comprendere gli habitat marini e l\'immersione responsabile', '<strong>Notte/Visione Limitata</strong> - Esplorate il mondo sottomarino in condizioni di scarsa luminosità', '<strong>Ricerca</strong> (Subacquea scientifica) - Metodi per condurre ricerche subacquee'], additionalLabel: 'Ulteriori possibilità (contattatemi per maggiori informazioni):', additionalList: ['Stagna', 'Conservazione Marina'], price: 'CHF 150.– a 250.–*', priceNote: '*Incluso: tassa di certificazione' }
             ],
             features: [
                 'Istruttore professionale',
@@ -468,10 +497,10 @@ document.addEventListener('DOMContentLoaded', function() {
             buttonAction: 'contact-modal'
         },
         'diving-initiation': {
-            title: 'Iniziazione Subacquea',
+            title: 'Intro Dive',
             description: 'Introduzione perfetta alla subacquea per principianti. Vivi l\'esperienza del mondo sottomarino in sicurezza con una guida professionale.',
             pricing: [
-                { title: 'Iniziazione Subacquea', icon: 'fas fa-star', description: 'Introduzione perfetta alla subacquea per principianti. Vivi l\'esperienza del mondo sottomarino in sicurezza con una guida professionale.', price: 'CHF 150.– per persona' }
+                { title: 'Intro Dive', icon: 'fas fa-star', description: 'Introduzione perfetta alla subacquea per principianti. Vivi l\'esperienza del mondo sottomarino in sicurezza con una guida professionale.', price: 'CHF 150.– per persona' }
             ],
             features: [
                 'Istruttore professionale',
@@ -480,7 +509,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Esperienza in acque libere',
                 'Contattami per informazioni sul noleggio attrezzatura'
             ],
-            buttonText: 'Prenota la tua iniziazione',
+            buttonText: 'Prenota il tuo Intro Dive',
             buttonAction: 'contact-modal'
         },
         'guided-tours': {
@@ -565,8 +594,8 @@ document.addEventListener('DOMContentLoaded', function() {
             pricing: [
                 { title: 'Open Water Taucher', icon: 'fas fa-star', description: 'Einstiegszertifikat. 2 begrenzte Wassersessions, 3-4 Freiwassertauchgänge, eLearning.', price: 'CHF 470.–' },
                 { title: 'Advanced Adventure Taucher', icon: 'fas fa-star', description: '5 Abenteuertauchgänge (z.B. Tiefe, Navigation, Nacht). Kontaktiere mich für Informationen, wo man Ausrüstung mieten kann und was gemietet werden sollte.', price: 'CHF 410.–' },
-                { title: 'Rescue Taucher', icon: 'fas fa-crown', description: 'Sicherheit, Stressmanagement, Rettungstechniken, 2 Tage, inkl. Szenarien.', price: 'CHF 630.–' },
-                { title: 'Divemaster', icon: 'fas fa-crown', description: 'Führungskurs. Theorie, Pool, Praktikum.', price: 'CHF 1,080.– bis 1,620.–' }
+                { title: 'Rescue Taucher', icon: 'fas fa-crown', description: 'Sicherheit, Stressmanagement, Rettungstechniken, 2 Tage, inkl. Szenarien.', price: 'CHF 630.–*', priceNote: '*Inklusive: Zertifizierungsgebühr' },
+                { title: 'Divemaster', icon: 'fas fa-crown', description: 'Führungskurs. Theorie, Pool, Praktikum.', price: 'CHF 850.– bis 1,200.–*', priceNote: '*Inklusive: Zertifizierungsgebühr' },
             ],
             features: [
                 'Professionelle Anleitung',
@@ -679,13 +708,31 @@ document.addEventListener('DOMContentLoaded', function() {
         const data = serviceData[serviceType];
         if (!data) return '';
         
-        const pricingHTML = data.pricing.map(item => `
+        const pricingHTML = data.pricing.map(item => {
+            const specialtyListHTML = item.specialtyList ? `
+                <ul class="pricing-specialty-list">
+                    ${item.specialtyList.map(entry => `<li>${entry}</li>`).join('')}
+                </ul>
+            ` : '';
+            const additionalListHTML = item.additionalList ? `
+                <p class="pricing-additional-label"><strong>${item.additionalLabel}</strong></p>
+                <ul class="pricing-specialty-list pricing-additional-list">
+                    ${item.additionalList.map(entry => `<li><strong>${entry}</strong></li>`).join('')}
+                </ul>
+            ` : '';
+
+            return `
             <div class="pricing-item">
                 <h5><i class="${item.icon}"></i> ${item.title}</h5>
                 <p>${item.description}</p>
+                ${specialtyListHTML}
+                ${additionalListHTML}
                 <span class="price">${item.price}</span>
+                ${item.priceGroup ? `<span class="price-group">${item.priceGroup}</span>` : ''}
+                ${item.priceNote ? `<span class="price-note">${item.priceNote}</span>` : ''}
             </div>
-        `).join('');
+        `;
+        }).join('');
         
         const featuresHTML = data.features.map(feature => `
             <li><i class="fas fa-check"></i> ${feature}</li>
