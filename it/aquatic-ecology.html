@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Google tag (gtag.js) -->
+    
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="48x48" href="/images/favicon-48.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="/images/favicon-192.png">
+<!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2NEP9YXBDC"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -42,7 +47,7 @@
         <div class="container">
             <div class="header-content">
                 <a href="home.html" class="logo-link">
-                    <img src="../images/Logo_Athelas.png" alt="Athelas Diving Logo" class="logo">
+                    <img src="../images/Logo_Athelas.webp" alt="Athelas Diving Logo" class="logo">
                 </a>
                 
                 <div class="burger-menu" id="burgerMenu">
@@ -59,6 +64,10 @@
                         <li><a href="wellness-art.html">Benessere & Arte</a></li>
                         <li><a href="about.html">Chi Sono</a></li>
                     </ul>
+                    <a href="https://wa.me/41799387737" class="nav-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Scrivimi">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                        <span>Scrivimi</span>
+                    </a>
                     <div class="language-selector">
                         <div class="language-flags">
                             <div class="language-flag en" onclick="changeLanguage('en')" title="English"></div>
@@ -72,7 +81,7 @@
     </header>
 
     <main>
-        <section class="hero" style="background-image: linear-gradient(rgba(2, 20, 21.6, 0.3), rgba(3, 30, 32, 0.4)), url('../images/ocean_landscape03.JPG');">
+        <section class="hero" style="background-image: linear-gradient(rgba(2, 20, 21.6, 0.3), rgba(3, 30, 32, 0.4)), url('../images/ocean_landscape03.webp');">
             <div class="container">
                 <h1>Ecologia Acquatica</h1>
                 <p class="subtitle">Formazione in Scienze Marine & Servizi Ambientali</p>
@@ -103,7 +112,7 @@
                         <p style="margin-top: 1.5rem;">Inoltre, insegno un corso sul legame tra esseri umani e il mondo acquatico all'Università di Neuchâtel. Questo programma completo esplora le relazioni complesse tra attività umane ed ecosistemi acquatici.</p>
                     </div>
                     <div class="professional-image">
-                        <img src="../images/sharkEgg_02.jpeg" alt="Ecologia Acquatica" class="professional-img">
+                        <img loading="lazy" src="../images/sharkEgg_02.webp" alt="Ecologia Acquatica" class="professional-img">
                     </div>
                 </div>
             </div>
@@ -115,7 +124,7 @@
                 <div class="services-grid">
                     <div class="service-card" data-service="underwater-work-ecology">
                         <div class="service-image">
-                            <img src="../images/underwater_work03.JPG" alt="Servizi Professionali" class="service-img">
+                            <img loading="lazy" src="../images/underwater_work03.webp" alt="Servizi Professionali" class="service-img">
                         </div>
                         <div class="service-content">
                             <h3>Servizi Sottomarini Professionali</h3>
@@ -128,7 +137,7 @@
                     
                     <div class="service-card" data-service="underwater-work-ecology">
                         <div class="service-image">
-                            <img src="../images/nudi_01.jpeg" alt="Corsi Personalizzati" class="service-img">
+                            <img loading="lazy" src="../images/nudi_01.jpeg" alt="Corsi Personalizzati" class="service-img">
                         </div>
                         <div class="service-content">
                             <h3>Corsi di Ecologia Personalizzati</h3>
@@ -181,7 +190,7 @@
                 <p>&copy; 2024 Athelas Diving di Antoine Baud. Tutti i diritti riservati.</p>
                 <div class="sdi-affiliation">
                     <a href="https://www.tdisdi.com/" target="_blank" rel="noopener noreferrer" class="sdi-logo-link">
-                        <img src="../images/SDI_Letter_Color_RGB_v0824-01.svg" alt="Istruttore Certificato SDI" class="sdi-logo">
+                        <img loading="lazy" src="../images/SDI_Letter_Color_RGB_v0824-01.svg" alt="Istruttore Certificato SDI" class="sdi-logo">
                     </a>
                 </div>
             </div>
@@ -196,22 +205,6 @@
             </button>
             <div class="modal-body">
                 <!-- Modal content will be dynamically loaded here -->
-            </div>
-        </div>
-    </div>
-
-    <div class="contact-modal" id="contactModal">
-        <div class="modal-overlay"></div>
-        <div class="modal-content">
-            <button class="modal-close" id="contactModalClose">
-                <i class="fas fa-times"></i>
-            </button>
-            <div class="modal-body">
-                <h2 class="modal-title" id="contactModalTitle">Contattaci</h2>
-                <p class="modal-description" id="contactModalDescription">Interessato a prenotare o hai bisogno di maggiori informazioni? Contattaci tramite una delle opzioni qui sotto.</p>
-                <div class="contact-buttons" id="contactModalButtons">
-                    <!-- Contact buttons will be inserted here -->
-                </div>
             </div>
         </div>
     </div>

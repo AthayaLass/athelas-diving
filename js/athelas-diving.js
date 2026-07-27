@@ -1,3 +1,15 @@
+const MOBILE_NAV_BREAKPOINT = 992;
+
+function closeMobileMenu() {
+    const navMenu = document.getElementById('navMenu');
+    const burgerMenu = document.getElementById('burgerMenu');
+    if (!navMenu || !burgerMenu) return;
+    navMenu.classList.remove('active');
+    burgerMenu.classList.remove('active');
+    document.body.classList.remove('menu-open');
+    burgerMenu.setAttribute('aria-expanded', 'false');
+}
+
 // Smooth scrolling for navigation links (only for anchor links starting with #)
 document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
@@ -12,13 +24,7 @@ document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
             });
         }
         
-        // Close mobile menu after clicking a link
-        const navMenu = document.getElementById('navMenu');
-        const burgerMenu = document.getElementById('burgerMenu');
-        if (navMenu && navMenu.classList.contains('active')) {
-            navMenu.classList.remove('active');
-            burgerMenu.classList.remove('active');
-        }
+        closeMobileMenu();
     });
 });
 
@@ -41,12 +47,7 @@ document.querySelectorAll('.btn-scroll-to-services[href^="#"]').forEach(button =
 // Close mobile menu when clicking regular page links
 document.querySelectorAll('nav a[href$=".html"]').forEach(link => {
     link.addEventListener('click', function() {
-        const navMenu = document.getElementById('navMenu');
-        const burgerMenu = document.getElementById('burgerMenu');
-        if (navMenu && navMenu.classList.contains('active')) {
-            navMenu.classList.remove('active');
-            burgerMenu.classList.remove('active');
-        }
+        closeMobileMenu();
     });
 });
 
@@ -54,33 +55,52 @@ document.querySelectorAll('nav a[href$=".html"]').forEach(link => {
 document.addEventListener('DOMContentLoaded', function() {
     const burgerMenu = document.getElementById('burgerMenu');
     const navMenu = document.getElementById('navMenu');
-    const body = document.body;
     
-    if (burgerMenu && navMenu) {
-        burgerMenu.addEventListener('click', function() {
-            burgerMenu.classList.toggle('active');
-            navMenu.classList.toggle('active');
-            body.classList.toggle('menu-open');
-        });
-        
-        // Close menu when clicking outside
-        document.addEventListener('click', function(e) {
-            if (!burgerMenu.contains(e.target) && !navMenu.contains(e.target)) {
-                burgerMenu.classList.remove('active');
-                navMenu.classList.remove('active');
-                body.classList.remove('menu-open');
-            }
-        });
-        
-        // Close menu on window resize (if switching from mobile to desktop)
-        window.addEventListener('resize', function() {
-            if (window.innerWidth > 768) {
-                burgerMenu.classList.remove('active');
-                navMenu.classList.remove('active');
-                body.classList.remove('menu-open');
-            }
-        });
+    if (!burgerMenu || !navMenu) return;
+
+    burgerMenu.setAttribute('role', 'button');
+    burgerMenu.setAttribute('tabindex', '0');
+    burgerMenu.setAttribute('aria-label', 'Toggle navigation menu');
+    burgerMenu.setAttribute('aria-expanded', 'false');
+    burgerMenu.setAttribute('aria-controls', 'navMenu');
+
+    function setMenuOpen(open) {
+        burgerMenu.classList.toggle('active', open);
+        navMenu.classList.toggle('active', open);
+        document.body.classList.toggle('menu-open', open);
+        burgerMenu.setAttribute('aria-expanded', String(open));
     }
+
+    burgerMenu.addEventListener('click', function(e) {
+        e.stopPropagation();
+        setMenuOpen(!navMenu.classList.contains('active'));
+    });
+
+    burgerMenu.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            setMenuOpen(!navMenu.classList.contains('active'));
+        }
+    });
+    
+    document.addEventListener('click', function(e) {
+        if (!navMenu.classList.contains('active')) return;
+        if (!burgerMenu.contains(e.target) && !navMenu.contains(e.target)) {
+            setMenuOpen(false);
+        }
+    });
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && navMenu.classList.contains('active')) {
+            setMenuOpen(false);
+        }
+    });
+    
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > MOBILE_NAV_BREAKPOINT) {
+            setMenuOpen(false);
+        }
+    });
 });
 
 // Header scroll behavior
@@ -190,19 +210,17 @@ document.addEventListener('DOMContentLoaded', function() {
                     description: 'SDI specialty certifications tailored to your interests. Price varies depending on the specialisation. Contact me for more information.',
                     specialtyList: [
                         '<strong>First Aid</strong> - CPR, AED and O₂ Provider - Emergency response training for diving incidents',
-                        '<strong>Computer Nitrox</strong> (&lt;40%) - Extend bottom time with enriched air using a dive computer',
                         '<strong>Computer Diver</strong> - Master dive computer use for safer, longer dives',
-                        '<strong>Boat</strong> - Skills and procedures for boat-based diving',
-                        '<strong>Shore/Beach</strong> - Techniques for entries and dives from shore',
                         '<strong>Navigation</strong> - Underwater navigation using compass and natural references',
                         '<strong>Advanced Buoyancy Control</strong> - Fine-tune trim and buoyancy for minimal impact',
-                        '<strong>Drift</strong> - Safe techniques for diving in currents',
                         '<strong>Marine Ecosystem Awareness</strong> - Understand marine habitats and responsible diving',
                         '<strong>Night/Limited Vision</strong> - Explore the underwater world in low-light conditions',
                         '<strong>Research</strong> (Scientific diving) - Methods for conducting underwater research'
                     ],
                     additionalLabel: 'Additional possibilities (contact me for info):',
-                    additionalList: ['Drysuit', 'Marine Conservation'],
+                    additionalList: ['Computer Nitrox (<40%)', 'Boat', 'Shore/Beach', 'Drift', 'Drysuit'],
+                    developmentLabel: 'In development:',
+                    developmentList: ['Marine Conservation', 'Underwater Yoga'],
                     price: 'CHF 150.– to 250.–*',
                     priceNote: '*Included: Certification fee'
                 }
@@ -372,7 +390,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 { title: 'Plongeur Advanced Adventure', icon: 'fas fa-star', description: '5 plongées d\'aventure (profonde, navigation, nuit). Équipement non inclus - prévoyez environ 200 CHF de plus pour la location sur toute la durée du cours. Ce montant est une estimation basée sur les tarifs des magasins de plongée de la région.', price: 'CHF 400.–*', priceNote: '*Inclus : frais de certification' },
                 { title: 'Plongeur Rescue', icon: 'fas fa-crown', description: 'Sécurité, gestion du stress, techniques de sauvetage, 2 jours, scénarios inclus. FRTI First Responder (RCP, DEA et administration d\'O2) disponible pour CHF 200.– par personne.', price: 'CHF 630.–*', priceNote: '*Inclus : frais de certification' },
                 { title: 'Divemaster', icon: 'fas fa-crown', description: 'Cours de leadership. Théorie, piscine, stage.', price: 'CHF 850.– à 1,200.–*', priceNote: '*Inclus : frais de certification' },
-                { title: 'Spécialisations Individuelles', icon: 'fas fa-certificate', description: 'Certifications de spécialité SDI adaptées à vos intérêts. Le prix varie selon la spécialisation. Contactez-moi pour plus d\'informations.', specialtyList: ['<strong>Premiers Secours</strong> - RCP, DEA et administration d\'O₂ - Formation aux interventions d\'urgence en plongée', '<strong>Nitrox Ordinateur</strong> (&lt;40%) - Prolongez le temps de fond avec l\'air enrichi et un ordinateur de plongée', '<strong>Plongeur Ordinateur</strong> - Maîtrisez l\'utilisation de l\'ordinateur de plongée pour des plongées plus sûres', '<strong>Bateau</strong> - Compétences et procédures pour la plongée depuis un bateau', '<strong>Rive/Plage</strong> - Techniques d\'entrée et de plongée depuis le rivage', '<strong>Navigation</strong> - Navigation sous-marine à l\'aide d\'une boussole et de références naturelles', '<strong>Contrôle Avancé de la Flottabilité</strong> - Affinez l\'équilibre et la flottabilité pour un impact minimal', '<strong>Dérive</strong> - Techniques sécurisées pour plonger dans les courants', '<strong>Sensibilisation aux Écosystèmes Marins</strong> - Comprendre les habitats marins et la plongée responsable', '<strong>Nuit/Vision Limitée</strong> - Explorez le monde sous-marin en conditions de faible luminosité', '<strong>Recherche</strong> (Plongée scientifique) - Méthodes pour mener des recherches sous-marines'], additionalLabel: 'Possibilités supplémentaires (contactez-moi pour plus d\'informations) :', additionalList: ['Stagne', 'Conservation Marine'], price: 'CHF 150.– à 250.–*', priceNote: '*Inclus : frais de certification' }
+                { title: 'Spécialisations Individuelles', icon: 'fas fa-certificate', description: 'Certifications de spécialité SDI adaptées à vos intérêts. Le prix varie selon la spécialisation. Contactez-moi pour plus d\'informations.', specialtyList: ['<strong>Premiers Secours</strong> - RCP, DEA et administration d\'O₂ - Formation aux interventions d\'urgence en plongée', '<strong>Plongeur avec Ordinateur</strong> - Maîtrisez l\'utilisation de l\'ordinateur de plongée pour des plongées plus sûres', '<strong>Navigation</strong> - Navigation sous-marine à l\'aide d\'une boussole et de références naturelles', '<strong>Contrôle Avancé de la Flottabilité</strong> - Affinez l\'équilibre et la flottabilité pour un impact minimal', '<strong>Sensibilisation aux Écosystèmes Marins</strong> - Comprendre les habitats marins et la plongée responsable', '<strong>Nuit/Vision Limitée</strong> - Explorez le monde sous-marin en conditions de faible luminosité', '<strong>Recherche</strong> (Plongée scientifique) - Méthodes pour mener des recherches sous-marines'], additionalLabel: 'Possibilités supplémentaires (contactez-moi pour plus d\'informations) :', additionalList: ['Nitrox Ordinateur (<40%)', 'Bateau', 'Rive/Plage', 'Dérive', 'Stagne'], developmentLabel: 'En développement :', developmentList: ['Conservation Marine', 'Yoga sub-aquatique'], price: 'CHF 150.– à 250.–*', priceNote: '*Inclus : frais de certification' }
             ],
             features: [
                 'Instruction professionnelle',
@@ -484,7 +502,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 { title: 'Subacqueo Advanced Adventure', icon: 'fas fa-star', description: '5 immersioni avventura (profonda, navigazione, notturna, ecc.). Attrezzatura non inclusa - prevedete circa 200 CHF in più per il noleggio durante il corso. Importo stimato in base ai prezzi dei negozi subacquei della zona.', price: 'CHF 400.–*', priceNote: '*Incluso: tassa di certificazione' },
                 { title: 'Subacqueo Rescue', icon: 'fas fa-crown', description: 'Sicurezza, gestione dello stress, tecniche di salvataggio, 2 giorni, scenari inclusi. FRTI First Responder (RCP, AED e erogazione O2) disponibile a CHF 200.– per persona.', price: 'CHF 630.–*', priceNote: '*Incluso: tassa di certificazione' },
                 { title: 'Divemaster', icon: 'fas fa-crown', description: 'Corso di leadership. Teoria, piscina, tirocinio.', price: 'CHF 850.– a 1,200.–*', priceNote: '*Incluso: tassa di certificazione' },
-                { title: 'Specializzazioni Individuali', icon: 'fas fa-certificate', description: 'Certificazioni di specialità SDI su misura per i vostri interessi. Il prezzo varia in base alla specializzazione. Contattatemi per maggiori informazioni.', specialtyList: ['<strong>Primo Soccorso</strong> - RCP, AED ed erogazione di O₂ - Formazione alle emergenze in immersione', '<strong>Nitrox Computer</strong> (&lt;40%) - Estendete il tempo di fondo con aria arricchita e computer subacqueo', '<strong>Subacqueo Computer</strong> - Padroneggiate l\'uso del computer subacqueo per immersioni più sicure', '<strong>Barca</strong> - Competenze e procedure per le immersioni da barca', '<strong>Costa/Spiaggia</strong> - Tecniche di entrata e immersione dalla riva', '<strong>Navigazione</strong> - Navigazione subacquea con bussola e riferimenti naturali', '<strong>Controllo Avanzato della Galleggiabilità</strong> - Affinate trim e galleggiabilità per un impatto minimo', '<strong>Deriva</strong> - Tecniche sicure per immergersi nelle correnti', '<strong>Consapevolezza degli Ecosistemi Marini</strong> - Comprendere gli habitat marini e l\'immersione responsabile', '<strong>Notte/Visione Limitata</strong> - Esplorate il mondo sottomarino in condizioni di scarsa luminosità', '<strong>Ricerca</strong> (Subacquea scientifica) - Metodi per condurre ricerche subacquee'], additionalLabel: 'Ulteriori possibilità (contattatemi per maggiori informazioni):', additionalList: ['Stagna', 'Conservazione Marina'], price: 'CHF 150.– a 250.–*', priceNote: '*Incluso: tassa di certificazione' }
+                { title: 'Specializzazioni Individuali', icon: 'fas fa-certificate', description: 'Certificazioni di specialità SDI su misura per i vostri interessi. Il prezzo varia in base alla specializzazione. Contattatemi per maggiori informazioni.', specialtyList: ['<strong>Primo Soccorso</strong> - RCP, AED ed erogazione di O₂ - Formazione alle emergenze in immersione', '<strong>Subacqueo con Computer</strong> - Padroneggiate l\'uso del computer subacqueo per immersioni più sicure', '<strong>Navigazione</strong> - Navigazione subacquea con bussola e riferimenti naturali', '<strong>Controllo Avanzato della Galleggiabilità</strong> - Affinate trim e galleggiabilità per un impatto minimo', '<strong>Consapevolezza degli Ecosistemi Marini</strong> - Comprendere gli habitat marini e l\'immersione responsabile', '<strong>Notte/Visione Limitata</strong> - Esplorate il mondo sottomarino in condizioni di scarsa luminosità', '<strong>Ricerca</strong> (Subacquea scientifica) - Metodi per condurre ricerche subacquee'], additionalLabel: 'Ulteriori possibilità (contattatemi per maggiori informazioni):', additionalList: ['Nitrox Computer (<40%)', 'Barca', 'Costa/Spiaggia', 'Deriva', 'Stagna'], developmentLabel: 'In sviluppo:', developmentList: ['Conservazione Marina', 'Yoga subacqueo'], price: 'CHF 150.– a 250.–*', priceNote: '*Incluso: tassa di certificazione' }
             ],
             features: [
                 'Istruttore professionale',
@@ -720,6 +738,12 @@ document.addEventListener('DOMContentLoaded', function() {
                     ${item.additionalList.map(entry => `<li><strong>${entry}</strong></li>`).join('')}
                 </ul>
             ` : '';
+            const developmentListHTML = item.developmentList ? `
+                <p class="pricing-additional-label"><strong>${item.developmentLabel}</strong></p>
+                <ul class="pricing-specialty-list pricing-additional-list">
+                    ${item.developmentList.map(entry => `<li><strong>${entry}</strong></li>`).join('')}
+                </ul>
+            ` : '';
 
             return `
             <div class="pricing-item">
@@ -727,6 +751,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <p>${item.description}</p>
                 ${specialtyListHTML}
                 ${additionalListHTML}
+                ${developmentListHTML}
                 <span class="price">${item.price}</span>
                 ${item.priceGroup ? `<span class="price-group">${item.priceGroup}</span>` : ''}
                 ${item.priceNote ? `<span class="price-note">${item.priceNote}</span>` : ''}
@@ -897,84 +922,10 @@ document.head.appendChild(style);
 // Initialize floating animation
 document.addEventListener('DOMContentLoaded', addFloatingAnimation);
 
-// Contact Modal Functionality
-function openContactModal(lang) {
-    const modal = document.getElementById('contactModal');
-    const modalTitle = document.getElementById('contactModalTitle');
-    const modalDescription = document.getElementById('contactModalDescription');
-    const modalButtons = document.getElementById('contactModalButtons');
-    
-    // Language-specific content
-    const content = {
-        'en': {
-            title: 'Get in Touch',
-            description: 'Interested in booking or need more information? Contact us through any of the options below.',
-            buttons: [
-                { href: 'https://calendly.com/a-baud-athelas-diving/reserve-your-diving-experience', icon: 'fas fa-calendar-alt', text: 'Book a Call', class: 'calendly' },
-                { href: 'mailto:a.baud@athelas-diving.com', icon: 'fas fa-envelope', text: 'Send Email', class: 'email' },
-                { href: 'https://wa.me/41799387737', icon: 'fab fa-whatsapp', text: 'WhatsApp', class: 'whatsapp' }
-            ]
-        },
-        'fr': {
-            title: 'Contactez-nous',
-            description: 'Intéressé par une réservation ou besoin de plus d\'informations ? Contactez-nous via l\'une des options ci-dessous.',
-            buttons: [
-                { href: 'https://calendly.com/a-baud-athelas-diving/reserve-your-diving-experience', icon: 'fas fa-calendar-alt', text: 'Réserver un Appel', class: 'calendly' },
-                { href: 'mailto:a.baud@athelas-diving.com', icon: 'fas fa-envelope', text: 'Envoyer un Email', class: 'email' },
-                { href: 'https://wa.me/41799387737', icon: 'fab fa-whatsapp', text: 'WhatsApp', class: 'whatsapp' }
-            ]
-        },
-        'it': {
-            title: 'Contattaci',
-            description: 'Interessato a prenotare o hai bisogno di maggiori informazioni? Contattaci tramite una delle opzioni qui sotto.',
-            buttons: [
-                { href: 'https://calendly.com/a-baud-athelas-diving/reserve-your-diving-experience', icon: 'fas fa-calendar-alt', text: 'Prenota una Chiamata', class: 'calendly' },
-                { href: 'mailto:a.baud@athelas-diving.com', icon: 'fas fa-envelope', text: 'Invia Email', class: 'email' },
-                { href: 'https://wa.me/41799387737', icon: 'fab fa-whatsapp', text: 'WhatsApp', class: 'whatsapp' }
-            ]
-        }
-    };
-    
-    const langContent = content[lang] || content['en'];
-    
-    // Update modal content
-    modalTitle.textContent = langContent.title;
-    modalDescription.textContent = langContent.description;
-    
-    // Generate buttons
-    modalButtons.innerHTML = langContent.buttons.map(btn => `
-        <a href="${btn.href}" target="${btn.href.startsWith('http') ? '_blank' : ''}" rel="noopener noreferrer" class="contact-button ${btn.class}">
-            <i class="${btn.icon}"></i>
-            <span>${btn.text}</span>
-        </a>
-    `).join('');
-    
-    // Show modal
-    modal.classList.add('active');
-    document.body.style.overflow = 'hidden';
-}
-
-// Close contact modal
-document.addEventListener('DOMContentLoaded', function() {
-    const contactModal = document.getElementById('contactModal');
-    const contactModalClose = document.getElementById('contactModalClose');
-    
-    if (contactModal && contactModalClose) {
-        const closeContactModal = function() {
-            contactModal.classList.remove('active');
-            document.body.style.overflow = '';
-        };
-        
-        contactModalClose.addEventListener('click', closeContactModal);
-        if (contactModal.querySelector('.modal-overlay')) {
-            contactModal.querySelector('.modal-overlay').addEventListener('click', closeContactModal);
-        }
-        
-        // Close modal on escape key
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape' && contactModal.classList.contains('active')) {
-                closeContactModal();
-            }
-        });
+// Scroll to the page contact section (used by service card / modal CTAs)
+function openContactModal() {
+    const contact = document.getElementById('contact');
+    if (contact) {
+        contact.scrollIntoView({ behavior: 'smooth' });
     }
-});
+}
