@@ -351,10 +351,14 @@ body.menu-open {
     transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
     box-shadow: 0 2px 10px rgba(37, 211, 102, 0.35);
     flex-shrink: 0;
+    margin-left: 0.75rem;
+    z-index: 1001;
+    position: relative;
 }
 
 .nav-whatsapp i {
     font-size: 1.15rem;
+    line-height: 1;
 }
 
 .nav-whatsapp:hover {
@@ -1873,9 +1877,38 @@ body.menu-open {
     }
 
     .nav-whatsapp {
-        margin-top: 0.5rem;
-        padding: 0.75rem 1.5rem;
-        font-size: 1rem;
+        order: 2;
+        width: 44px;
+        height: 44px;
+        min-width: 44px;
+        min-height: 44px;
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0.5rem;
+        border-radius: 50%;
+        gap: 0;
+        flex-shrink: 0;
+    }
+
+    .nav-whatsapp span {
+        display: none;
+    }
+
+    .nav-whatsapp i {
+        font-size: 1.45rem;
+    }
+
+    .burger-menu {
+        order: 3;
+    }
+
+    .logo-link {
+        order: 1;
+        margin-right: auto;
+    }
+
+    .nav-menu {
+        order: 4;
     }
 
     nav a:hover {
@@ -3030,10 +3063,6 @@ footer {
 
     .point {
         padding: 1.25rem;
-    }
-
-    .nav-whatsapp span {
-        font-size: 0.95rem;
     }
 }
  
